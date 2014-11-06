@@ -1,0 +1,22 @@
+// In a .build file you specify directives for the DVT builder.
+// Any line preceded by '//', '#' or '--' is considered a comment.
+// 
+// examples/xbus_tb_top.sv      // top file, path relative to project root
+// examples/xbus_tb_top.e       // top file, path relative to project root
+// examples/xbus_tb_top.vhd     // top file, path relative to project root
+// ${UVM_HOME}/src/uvm_pkg.sv   // top file, absolute path with system variable
+// -f my_command_file.f         // include another command file
+// +incdir+${UVM_HOME}/src/     // indicate search directory (for `include)
+// -incdir ${UVM_HOME}/src/     // indicate search directory (for `include)
+// +define+INCA                 // define preprocessing symbol
+// +define+CHIP_LEVEL_ID=0x10   // define preprocessing symbol with value
+// -v src/source_library_file.v // specify Verilog source library file
+// -y src/lib                   // specify Verilog source library directory
+
++dvt_env+UVM_HOME=/apps/cadence/INCISIV_13.20.006/tools.lnx86/uvm-1.1/uvm_lib/uvm_sv/
+-uvm
++incdir+sv/
++incdir+ve/sv/
++incdir+tests/
++incdir+uvmc-2.2/src/connect/sv/
+ve/sv/amiq_eth_ve_top.v

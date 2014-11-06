@@ -1,0 +1,220 @@
+\hypertarget{classamiq__eth__packet__arp}{
+\section{amiq\_\-eth\_\-packet\_\-arp Class Reference}
+\label{classamiq__eth__packet__arp}\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}}
+}
+Inheritance diagram for amiq\_\-eth\_\-packet\_\-arp::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classamiq__eth__packet__arp}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classamiq__eth__packet__arp_acfbc5406f0f914c2cae4a69c3aac1efd}{pack\_\-fcs} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer) const 
+\item 
+virtual void \hyperlink{classamiq__eth__packet__arp_aa0919231910bf804ffafd9b1b771785f}{do\_\-pack} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer) const 
+\item 
+virtual void \hyperlink{classamiq__eth__packet__arp_afa8463360e8e62b24e1171093b00a798}{do\_\-unpack} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer)
+\item 
+virtual void \hyperlink{classamiq__eth__packet__arp_aa94e012455f436aa874eb6e27e02b5fa}{do\_\-pack\_\-for\_\-fcs} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer) const 
+\item 
+virtual void \hyperlink{classamiq__eth__packet__arp_abbb862d7b7abe9b1c6d49455f80f6921}{do\_\-print} (ostream \&out) const 
+\item 
+virtual tlm\_\-generic\_\-payload $\ast$ \hyperlink{classamiq__eth__packet__arp_a24f433f25d4cec2799e58a836c1411f0}{to\_\-generic\_\-payload} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amiq__eth__types_8cpp_a57d82b862801f170752f3b81ae948838}{amiq\_\-eth\_\-arp\_\-htype} \hyperlink{classamiq__eth__packet__arp_ad68808d1acee5cca1aa1018d5178fd70}{htype}
+\item 
+\hyperlink{amiq__eth__types_8cpp_a669fee937518599516130e8fe7bc36ad}{amiq\_\-eth\_\-arp\_\-ptype} \hyperlink{classamiq__eth__packet__arp_a7a92908295901d6f1a977202a5cb0af4}{ptype}
+\item 
+\hyperlink{amiq__eth__types_8cpp_a6b0331d6087c47be9890ff13c58c7615}{amiq\_\-eth\_\-arp\_\-hlen} \hyperlink{classamiq__eth__packet__arp_ad86a177f701e6128715273f80c531254}{hlen}
+\item 
+\hyperlink{amiq__eth__types_8cpp_a84b5cd928120d73e6a70df7e5ace5777}{amiq\_\-eth\_\-arp\_\-plen} \hyperlink{classamiq__eth__packet__arp_a64075c60ab6794a6ebfe0f319a7a7ae1}{plen}
+\item 
+\hyperlink{amiq__eth__types_8cpp_abc7e041795089b26a090e6d70ba77a33}{amiq\_\-eth\_\-arp\_\-oper} \hyperlink{classamiq__eth__packet__arp_a3e338c8338dc370a062e3548b1d5eb57}{oper}
+\item 
+\hyperlink{amiq__eth__types_8cpp_ab974d6b9f451dd6be0fffe403faa3954}{amiq\_\-eth\_\-arp\_\-sha} \hyperlink{classamiq__eth__packet__arp_a5e72287f1472bf6abeebb375213a9ce1}{sha}
+\item 
+\hyperlink{amiq__eth__types_8cpp_a96d988e11990ba5d16bb61e9a2bb02fc}{amiq\_\-eth\_\-arp\_\-spa} \hyperlink{classamiq__eth__packet__arp_abbebf95b682baec2273e44d79cecd52b}{spa}
+\item 
+\hyperlink{amiq__eth__types_8cpp_a53650a3ccfac473befae378c0f463783}{amiq\_\-eth\_\-arp\_\-tha} \hyperlink{classamiq__eth__packet__arp_a68f413bad7f92628c8f5d7a4fadf04d3}{tha}
+\item 
+\hyperlink{amiq__eth__types_8cpp_acdb620684aa5dea9eda90d536bfeb5d7}{amiq\_\-eth\_\-arp\_\-tpa} \hyperlink{classamiq__eth__packet__arp_a5bb380a2871707d3aabe84617951fde3}{tpa}
+\item 
+\hyperlink{amiq__eth__types_8cpp_adb511dc715b55539c6abdad1de981a9f}{amiq\_\-eth\_\-fcs} \hyperlink{classamiq__eth__packet__arp_ac30a0aba3c6f9178fba78dcc1dd6327e}{fcs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 29 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+\subsection{Member Function Documentation}
+\hypertarget{classamiq__eth__packet__arp_aa0919231910bf804ffafd9b1b771785f}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!do\_\-pack@{do\_\-pack}}
+\index{do\_\-pack@{do\_\-pack}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{do\_\-pack}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-arp::do\_\-pack ({\bf amiq\_\-eth\_\-packer} \& {\em packer}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__arp_aa0919231910bf804ffafd9b1b771785f}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet__ether__type_a62fe5f26a466f0bd0045599b89aa6926}{amiq\_\-eth\_\-packet\_\-ether\_\-type}.
+
+Definition at line 76 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+References amiq\_\-eth\_\-do\_\-pack(), hlen, htype, oper, pack\_\-fcs(), plen, ptype, sha, spa, tha, and tpa.\hypertarget{classamiq__eth__packet__arp_aa94e012455f436aa874eb6e27e02b5fa}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!do\_\-pack\_\-for\_\-fcs@{do\_\-pack\_\-for\_\-fcs}}
+\index{do\_\-pack\_\-for\_\-fcs@{do\_\-pack\_\-for\_\-fcs}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{do\_\-pack\_\-for\_\-fcs}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-arp::do\_\-pack\_\-for\_\-fcs ({\bf amiq\_\-eth\_\-packer} \& {\em packer}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__arp_aa94e012455f436aa874eb6e27e02b5fa}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet__ether__type_aaa85cf778650e1c1b377392a975cb7bc}{amiq\_\-eth\_\-packet\_\-ether\_\-type}.
+
+Definition at line 112 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+References amiq\_\-eth\_\-do\_\-pack(), hlen, htype, oper, plen, ptype, sha, spa, tha, and tpa.\hypertarget{classamiq__eth__packet__arp_abbb862d7b7abe9b1c6d49455f80f6921}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!do\_\-print@{do\_\-print}}
+\index{do\_\-print@{do\_\-print}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{do\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-arp::do\_\-print (ostream \& {\em out}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__arp_abbb862d7b7abe9b1c6d49455f80f6921}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet__ether__type_a9b2852fa1aaf278138fde2232e446f63}{amiq\_\-eth\_\-packet\_\-ether\_\-type}.
+
+Definition at line 127 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+References AMIQ\_\-ETH\_\-FIELD\_\-SEPARATOR, fcs, amiq\_\-eth\_\-packet::get\_\-correct\_\-fcs(), hlen, htype, oper, plen, ptype, sha, spa, tha, and tpa.\hypertarget{classamiq__eth__packet__arp_afa8463360e8e62b24e1171093b00a798}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!do\_\-unpack@{do\_\-unpack}}
+\index{do\_\-unpack@{do\_\-unpack}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{do\_\-unpack}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-arp::do\_\-unpack ({\bf amiq\_\-eth\_\-packer} \& {\em packer})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__arp_afa8463360e8e62b24e1171093b00a798}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet__ether__type_a0c86ef80c46bbed384739b23e5efb0ef}{amiq\_\-eth\_\-packet\_\-ether\_\-type}.
+
+Definition at line 94 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+References amiq\_\-eth\_\-do\_\-unpack(), fcs, hlen, htype, oper, plen, ptype, sha, spa, tha, and tpa.\hypertarget{classamiq__eth__packet__arp_acfbc5406f0f914c2cae4a69c3aac1efd}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!pack\_\-fcs@{pack\_\-fcs}}
+\index{pack\_\-fcs@{pack\_\-fcs}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{pack\_\-fcs}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-arp::pack\_\-fcs ({\bf amiq\_\-eth\_\-packer} \& {\em packer}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__arp_acfbc5406f0f914c2cae4a69c3aac1efd}
+
+
+Definition at line 70 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+References amiq\_\-eth\_\-do\_\-pack(), and fcs.
+
+Referenced by do\_\-pack().\hypertarget{classamiq__eth__packet__arp_a24f433f25d4cec2799e58a836c1411f0}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!to\_\-generic\_\-payload@{to\_\-generic\_\-payload}}
+\index{to\_\-generic\_\-payload@{to\_\-generic\_\-payload}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{to\_\-generic\_\-payload}]{\setlength{\rightskip}{0pt plus 5cm}virtual tlm\_\-generic\_\-payload$\ast$ amiq\_\-eth\_\-packet\_\-arp::to\_\-generic\_\-payload () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__arp_a24f433f25d4cec2799e58a836c1411f0}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet_a6dd92751d8172eeaa347d71bb415b0d5}{amiq\_\-eth\_\-packet}.
+
+Definition at line 157 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+References AMIQ\_\-ETH\_\-PACKET\_\-ARP\_\-CODE.
+
+\subsection{Member Data Documentation}
+\hypertarget{classamiq__eth__packet__arp_ac30a0aba3c6f9178fba78dcc1dd6327e}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!fcs@{fcs}}
+\index{fcs@{fcs}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{fcs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-fcs} {\bf amiq\_\-eth\_\-packet\_\-arp::fcs}}}
+\label{classamiq__eth__packet__arp_ac30a0aba3c6f9178fba78dcc1dd6327e}
+
+
+Definition at line 66 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+Referenced by do\_\-print(), do\_\-unpack(), and pack\_\-fcs().\hypertarget{classamiq__eth__packet__arp_ad86a177f701e6128715273f80c531254}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!hlen@{hlen}}
+\index{hlen@{hlen}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{hlen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-arp\_\-hlen} {\bf amiq\_\-eth\_\-packet\_\-arp::hlen}}}
+\label{classamiq__eth__packet__arp_ad86a177f701e6128715273f80c531254}
+
+
+Definition at line 40 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+Referenced by do\_\-pack(), do\_\-pack\_\-for\_\-fcs(), do\_\-print(), and do\_\-unpack().\hypertarget{classamiq__eth__packet__arp_ad68808d1acee5cca1aa1018d5178fd70}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!htype@{htype}}
+\index{htype@{htype}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{htype}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-arp\_\-htype} {\bf amiq\_\-eth\_\-packet\_\-arp::htype}}}
+\label{classamiq__eth__packet__arp_ad68808d1acee5cca1aa1018d5178fd70}
+
+
+Definition at line 34 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+Referenced by do\_\-pack(), do\_\-pack\_\-for\_\-fcs(), do\_\-print(), and do\_\-unpack().\hypertarget{classamiq__eth__packet__arp_a3e338c8338dc370a062e3548b1d5eb57}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!oper@{oper}}
+\index{oper@{oper}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{oper}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-arp\_\-oper} {\bf amiq\_\-eth\_\-packet\_\-arp::oper}}}
+\label{classamiq__eth__packet__arp_a3e338c8338dc370a062e3548b1d5eb57}
+
+
+Definition at line 46 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+Referenced by do\_\-pack(), do\_\-pack\_\-for\_\-fcs(), do\_\-print(), and do\_\-unpack().\hypertarget{classamiq__eth__packet__arp_a64075c60ab6794a6ebfe0f319a7a7ae1}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!plen@{plen}}
+\index{plen@{plen}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{plen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-arp\_\-plen} {\bf amiq\_\-eth\_\-packet\_\-arp::plen}}}
+\label{classamiq__eth__packet__arp_a64075c60ab6794a6ebfe0f319a7a7ae1}
+
+
+Definition at line 43 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+Referenced by do\_\-pack(), do\_\-pack\_\-for\_\-fcs(), do\_\-print(), and do\_\-unpack().\hypertarget{classamiq__eth__packet__arp_a7a92908295901d6f1a977202a5cb0af4}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!ptype@{ptype}}
+\index{ptype@{ptype}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{ptype}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-arp\_\-ptype} {\bf amiq\_\-eth\_\-packet\_\-arp::ptype}}}
+\label{classamiq__eth__packet__arp_a7a92908295901d6f1a977202a5cb0af4}
+
+
+Definition at line 37 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+Referenced by do\_\-pack(), do\_\-pack\_\-for\_\-fcs(), do\_\-print(), and do\_\-unpack().\hypertarget{classamiq__eth__packet__arp_a5e72287f1472bf6abeebb375213a9ce1}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!sha@{sha}}
+\index{sha@{sha}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{sha}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-arp\_\-sha} {\bf amiq\_\-eth\_\-packet\_\-arp::sha}}}
+\label{classamiq__eth__packet__arp_a5e72287f1472bf6abeebb375213a9ce1}
+
+
+Definition at line 52 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+Referenced by do\_\-pack(), do\_\-pack\_\-for\_\-fcs(), do\_\-print(), and do\_\-unpack().\hypertarget{classamiq__eth__packet__arp_abbebf95b682baec2273e44d79cecd52b}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!spa@{spa}}
+\index{spa@{spa}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{spa}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-arp\_\-spa} {\bf amiq\_\-eth\_\-packet\_\-arp::spa}}}
+\label{classamiq__eth__packet__arp_abbebf95b682baec2273e44d79cecd52b}
+
+
+Definition at line 55 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+Referenced by do\_\-pack(), do\_\-pack\_\-for\_\-fcs(), do\_\-print(), and do\_\-unpack().\hypertarget{classamiq__eth__packet__arp_a68f413bad7f92628c8f5d7a4fadf04d3}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!tha@{tha}}
+\index{tha@{tha}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{tha}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-arp\_\-tha} {\bf amiq\_\-eth\_\-packet\_\-arp::tha}}}
+\label{classamiq__eth__packet__arp_a68f413bad7f92628c8f5d7a4fadf04d3}
+
+
+Definition at line 60 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+Referenced by do\_\-pack(), do\_\-pack\_\-for\_\-fcs(), do\_\-print(), and do\_\-unpack().\hypertarget{classamiq__eth__packet__arp_a5bb380a2871707d3aabe84617951fde3}{
+\index{amiq\_\-eth\_\-packet\_\-arp@{amiq\_\-eth\_\-packet\_\-arp}!tpa@{tpa}}
+\index{tpa@{tpa}!amiq_eth_packet_arp@{amiq\_\-eth\_\-packet\_\-arp}}
+\subsubsection[{tpa}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-arp\_\-tpa} {\bf amiq\_\-eth\_\-packet\_\-arp::tpa}}}
+\label{classamiq__eth__packet__arp_a5bb380a2871707d3aabe84617951fde3}
+
+
+Definition at line 63 of file amiq\_\-eth\_\-packet\_\-arp.cpp.
+
+Referenced by do\_\-pack(), do\_\-pack\_\-for\_\-fcs(), do\_\-print(), and do\_\-unpack().
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/cristian.slav/work/amiq/projects/sv/amiq\_\-eth/sc/\hyperlink{amiq__eth__packet__arp_8cpp}{amiq\_\-eth\_\-packet\_\-arp.cpp}\end{DoxyCompactItemize}

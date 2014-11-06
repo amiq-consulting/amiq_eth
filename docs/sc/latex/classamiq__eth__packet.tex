@@ -1,0 +1,260 @@
+\hypertarget{classamiq__eth__packet}{
+\section{amiq\_\-eth\_\-packet Class Reference}
+\label{classamiq__eth__packet}\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}}
+}
+Inheritance diagram for amiq\_\-eth\_\-packet::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.36782cm]{classamiq__eth__packet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamiq__eth__packet_a43b53f467fec192349879a89c51fe33c}{amiq\_\-eth\_\-packet} ()
+\item 
+virtual \hyperlink{classamiq__eth__packet_a2734b85141844331fded960c4c91f8b7}{$\sim$amiq\_\-eth\_\-packet} ()
+\item 
+virtual void \hyperlink{classamiq__eth__packet_a37c0f0b45e9648a710310c7c3acca77f}{do\_\-pack} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer, bool pack\_\-preamble, bool pack\_\-sfd) const 
+\item 
+virtual void \hyperlink{classamiq__eth__packet_a909eb3860185125564fa530496ed1c9e}{do\_\-unpack} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer)
+\item 
+virtual void \hyperlink{classamiq__eth__packet_ab580d89fb44208f5a0fe31443619473e}{do\_\-pack} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer) const 
+\item 
+virtual void \hyperlink{classamiq__eth__packet_aacbc675df31e2674b5b4c73c9bd9961e}{do\_\-pack\_\-for\_\-fcs} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer) const 
+\item 
+virtual void \hyperlink{classamiq__eth__packet_aa179c700ae183f1b884a9222a73fed4e}{do\_\-print} (ostream \&out) const 
+\item 
+virtual tlm\_\-generic\_\-payload $\ast$ \hyperlink{classamiq__eth__packet_a6dd92751d8172eeaa347d71bb415b0d5}{to\_\-generic\_\-payload} () const 
+\item 
+virtual \hyperlink{amiq__eth__types_8cpp_adb511dc715b55539c6abdad1de981a9f}{amiq\_\-eth\_\-fcs} \hyperlink{classamiq__eth__packet_a2f1fcef6ebdffa00a9b34fc7eae1be5e}{get\_\-correct\_\-fcs} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{amiq__eth__types_8cpp_adb511dc715b55539c6abdad1de981a9f}{amiq\_\-eth\_\-fcs} \hyperlink{classamiq__eth__packet_ac090905485be6152d3904c08ef576d3d}{crc32\_\-ccitt\_\-seed} (unsigned char $\ast$byte\_\-data, unsigned int length, \hyperlink{amiq__eth__types_8cpp_adb511dc715b55539c6abdad1de981a9f}{amiq\_\-eth\_\-fcs} seed)
+\item 
+static \hyperlink{amiq__eth__types_8cpp_adb511dc715b55539c6abdad1de981a9f}{amiq\_\-eth\_\-fcs} \hyperlink{classamiq__eth__packet_a873819b36fc796deb1e97bd7d18d4a67}{get\_\-crc32\_\-ccitt} (unsigned char $\ast$byte\_\-data, unsigned int length)
+\item 
+static \hyperlink{amiq__eth__types_8cpp_adb511dc715b55539c6abdad1de981a9f}{amiq\_\-eth\_\-fcs} \hyperlink{classamiq__eth__packet_a1d83e7013b03e4cb3cccca9d4cae3a4e}{swap\_\-bytes} (\hyperlink{amiq__eth__types_8cpp_adb511dc715b55539c6abdad1de981a9f}{amiq\_\-eth\_\-fcs} data)
+\item 
+static \hyperlink{amiq__eth__types_8cpp_adb511dc715b55539c6abdad1de981a9f}{amiq\_\-eth\_\-fcs} \hyperlink{classamiq__eth__packet_a52f95dacb2ead62a53d11491b8b3f445}{get\_\-crc32\_\-802} (unsigned char $\ast$byte\_\-data, unsigned int length)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amiq__eth__types_8cpp_aa38046dc0a58f891a7383b5ac27cb621}{amiq\_\-eth\_\-preamble} \hyperlink{classamiq__eth__packet_a222c60f5498580313a81f07c58782d4c}{preamble}
+\item 
+\hyperlink{amiq__eth__types_8cpp_a3feab3e58bfe4fa7ee2f560fe2ba6d02}{amiq\_\-eth\_\-sfd} \hyperlink{classamiq__eth__packet_a03b98e9cda79e6715ac4b38f2ca51569}{sfd}
+\item 
+\hyperlink{amiq__eth__types_8cpp_a76a5a0c4430f7bd4f0773ac89fcc104a}{amiq\_\-eth\_\-address} \hyperlink{classamiq__eth__packet_a03a4cb1ee40c7aaa8db2c8a8560086ae}{destination\_\-address}
+\item 
+\hyperlink{amiq__eth__types_8cpp_a76a5a0c4430f7bd4f0773ac89fcc104a}{amiq\_\-eth\_\-address} \hyperlink{classamiq__eth__packet_a04153feceffaf9c897706f2143261980}{source\_\-address}
+\item 
+unsigned int \hyperlink{classamiq__eth__packet_a4e1eca2891cd445b62dbd17a98a5fc22}{min\_\-frame\_\-size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 89 of file amiq\_\-eth\_\-packet.cpp.
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classamiq__eth__packet_a43b53f467fec192349879a89c51fe33c}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}}
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{amiq\_\-eth\_\-packet}]{\setlength{\rightskip}{0pt plus 5cm}amiq\_\-eth\_\-packet::amiq\_\-eth\_\-packet ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classamiq__eth__packet_a43b53f467fec192349879a89c51fe33c}
+
+
+Definition at line 108 of file amiq\_\-eth\_\-packet.cpp.
+
+References AMIQ\_\-ETH\_\-DEFAULT\_\-MIN\_\-FRAME\_\-SIZE, and min\_\-frame\_\-size.\hypertarget{classamiq__eth__packet_a2734b85141844331fded960c4c91f8b7}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!$\sim$amiq\_\-eth\_\-packet@{$\sim$amiq\_\-eth\_\-packet}}
+\index{$\sim$amiq\_\-eth\_\-packet@{$\sim$amiq\_\-eth\_\-packet}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{$\sim$amiq\_\-eth\_\-packet}]{\setlength{\rightskip}{0pt plus 5cm}virtual amiq\_\-eth\_\-packet::$\sim$amiq\_\-eth\_\-packet ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet_a2734b85141844331fded960c4c91f8b7}
+
+
+Definition at line 113 of file amiq\_\-eth\_\-packet.cpp.
+
+\subsection{Member Function Documentation}
+\hypertarget{classamiq__eth__packet_ac090905485be6152d3904c08ef576d3d}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!crc32\_\-ccitt\_\-seed@{crc32\_\-ccitt\_\-seed}}
+\index{crc32\_\-ccitt\_\-seed@{crc32\_\-ccitt\_\-seed}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{crc32\_\-ccitt\_\-seed}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf amiq\_\-eth\_\-fcs} amiq\_\-eth\_\-packet::crc32\_\-ccitt\_\-seed (unsigned char $\ast$ {\em byte\_\-data}, \/  unsigned int {\em length}, \/  {\bf amiq\_\-eth\_\-fcs} {\em seed})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classamiq__eth__packet_ac090905485be6152d3904c08ef576d3d}
+
+
+Definition at line 189 of file amiq\_\-eth\_\-packet.cpp.
+
+References crc32\_\-ccitt\_\-table.
+
+Referenced by get\_\-crc32\_\-ccitt().\hypertarget{classamiq__eth__packet_ab580d89fb44208f5a0fe31443619473e}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!do\_\-pack@{do\_\-pack}}
+\index{do\_\-pack@{do\_\-pack}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{do\_\-pack}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet::do\_\-pack ({\bf amiq\_\-eth\_\-packer} \& {\em packer}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet_ab580d89fb44208f5a0fe31443619473e}
+
+
+Reimplemented from \hyperlink{classamiq__eth__object_a1c8e3c7f04c5a75ccfdb5140f1559879}{amiq\_\-eth\_\-object}.
+
+Reimplemented in \hyperlink{classamiq__eth__packet__arp_aa0919231910bf804ffafd9b1b771785f}{amiq\_\-eth\_\-packet\_\-arp}, \hyperlink{classamiq__eth__packet__ether__type_a62fe5f26a466f0bd0045599b89aa6926}{amiq\_\-eth\_\-packet\_\-ether\_\-type}, \hyperlink{classamiq__eth__packet__ethernet__configuration__testing_a4ae6c0485066d7661170544fa64c7e49}{amiq\_\-eth\_\-packet\_\-ethernet\_\-configuration\_\-testing}, \hyperlink{classamiq__eth__packet__fcoe_ae119ce0a219ea22eef14da61262afbb7}{amiq\_\-eth\_\-packet\_\-fcoe}, \hyperlink{classamiq__eth__packet__hsr__base_a6dc22f94409c889f248908b1454af8b0}{amiq\_\-eth\_\-packet\_\-hsr\_\-base}, \hyperlink{classamiq__eth__packet__hsr__standard_a1dce9b763e3222c2fe257b15df912514}{amiq\_\-eth\_\-packet\_\-hsr\_\-standard}, \hyperlink{classamiq__eth__packet__ipv4_a8130e24da66bbd16c4edc7b6a608a5e9}{amiq\_\-eth\_\-packet\_\-ipv4}, \hyperlink{classamiq__eth__packet__jumbo_a1f2906c7128a79c356e152368584d2e8}{amiq\_\-eth\_\-packet\_\-jumbo}, \hyperlink{classamiq__eth__packet__length_a0e4e4b570a84eda1274ff8f0e76b45df}{amiq\_\-eth\_\-packet\_\-length}, \hyperlink{classamiq__eth__packet__magic_ad026a187c1d882aa1698a3b0d4209472}{amiq\_\-eth\_\-packet\_\-magic}, \hyperlink{classamiq__eth__packet__pause_aaea61c8cafc5274eac5d2b5428876868}{amiq\_\-eth\_\-packet\_\-pause}, \hyperlink{classamiq__eth__packet__pfc__pause_ac06dfc3d16b73113bbd42460ddbc9c4b}{amiq\_\-eth\_\-packet\_\-pfc\_\-pause}, \hyperlink{classamiq__eth__packet__ptp_a5d415af5fcb6ed2cb603aaf0105fdd43}{amiq\_\-eth\_\-packet\_\-ptp}, and \hyperlink{classamiq__eth__packet__snap_ace29c0c126f983a5e88ff933f1b34ff6}{amiq\_\-eth\_\-packet\_\-snap}.
+
+Definition at line 145 of file amiq\_\-eth\_\-packet.cpp.
+
+References do\_\-pack().\hypertarget{classamiq__eth__packet_a37c0f0b45e9648a710310c7c3acca77f}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!do\_\-pack@{do\_\-pack}}
+\index{do\_\-pack@{do\_\-pack}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{do\_\-pack}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet::do\_\-pack ({\bf amiq\_\-eth\_\-packer} \& {\em packer}, \/  bool {\em pack\_\-preamble}, \/  bool {\em pack\_\-sfd}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet_a37c0f0b45e9648a710310c7c3acca77f}
+
+
+Definition at line 121 of file amiq\_\-eth\_\-packet.cpp.
+
+References amiq\_\-eth\_\-do\_\-pack(), destination\_\-address, preamble, sfd, and source\_\-address.
+
+Referenced by do\_\-pack(), and do\_\-pack\_\-for\_\-fcs().\hypertarget{classamiq__eth__packet_aacbc675df31e2674b5b4c73c9bd9961e}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!do\_\-pack\_\-for\_\-fcs@{do\_\-pack\_\-for\_\-fcs}}
+\index{do\_\-pack\_\-for\_\-fcs@{do\_\-pack\_\-for\_\-fcs}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{do\_\-pack\_\-for\_\-fcs}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet::do\_\-pack\_\-for\_\-fcs ({\bf amiq\_\-eth\_\-packer} \& {\em packer}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet_aacbc675df31e2674b5b4c73c9bd9961e}
+
+
+Reimplemented in \hyperlink{classamiq__eth__packet__arp_aa94e012455f436aa874eb6e27e02b5fa}{amiq\_\-eth\_\-packet\_\-arp}, \hyperlink{classamiq__eth__packet__ether__type_aaa85cf778650e1c1b377392a975cb7bc}{amiq\_\-eth\_\-packet\_\-ether\_\-type}, \hyperlink{classamiq__eth__packet__ipv4_a9292f2b244e6baae39ba4aeea7b97e8f}{amiq\_\-eth\_\-packet\_\-ipv4}, \hyperlink{classamiq__eth__packet__jumbo_ad1b7057e4292645ccb65b57bcea3a549}{amiq\_\-eth\_\-packet\_\-jumbo}, \hyperlink{classamiq__eth__packet__magic_a0a40225ac5c36e70f413cd6d8ffd9a24}{amiq\_\-eth\_\-packet\_\-magic}, \hyperlink{classamiq__eth__packet__ptp_a68337ad7c7971f267b692dfbd92ede7b}{amiq\_\-eth\_\-packet\_\-ptp}, and \hyperlink{classamiq__eth__packet__snap_a042b049988a9e938cb80acb497cfafe5}{amiq\_\-eth\_\-packet\_\-snap}.
+
+Definition at line 151 of file amiq\_\-eth\_\-packet.cpp.
+
+References do\_\-pack().
+
+Referenced by get\_\-correct\_\-fcs().\hypertarget{classamiq__eth__packet_aa179c700ae183f1b884a9222a73fed4e}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!do\_\-print@{do\_\-print}}
+\index{do\_\-print@{do\_\-print}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{do\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet::do\_\-print (ostream \& {\em out}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet_aa179c700ae183f1b884a9222a73fed4e}
+
+
+Reimplemented in \hyperlink{classamiq__eth__packet__arp_abbb862d7b7abe9b1c6d49455f80f6921}{amiq\_\-eth\_\-packet\_\-arp}, \hyperlink{classamiq__eth__packet__ether__type_a9b2852fa1aaf278138fde2232e446f63}{amiq\_\-eth\_\-packet\_\-ether\_\-type}, \hyperlink{classamiq__eth__packet__ethernet__configuration__testing_aaac4abb2c0104900e30360871e01bbbd}{amiq\_\-eth\_\-packet\_\-ethernet\_\-configuration\_\-testing}, \hyperlink{classamiq__eth__packet__fcoe_a39fa215f83aa71ff06c5fd699de8e427}{amiq\_\-eth\_\-packet\_\-fcoe}, \hyperlink{classamiq__eth__packet__hsr__base_a83b7ccb4b601e00ba5cfbbfde6658632}{amiq\_\-eth\_\-packet\_\-hsr\_\-base}, \hyperlink{classamiq__eth__packet__hsr__standard_abaa39d881f90e05ae4acbb7fe5ebca0d}{amiq\_\-eth\_\-packet\_\-hsr\_\-standard}, \hyperlink{classamiq__eth__packet__ipv4_a5e93e2455918061cdc524f30626d4043}{amiq\_\-eth\_\-packet\_\-ipv4}, \hyperlink{classamiq__eth__packet__jumbo_a744d47397c29884a7da15e5582b331a2}{amiq\_\-eth\_\-packet\_\-jumbo}, \hyperlink{classamiq__eth__packet__length_a2caccb08da11dbb3ab39178bc41bca75}{amiq\_\-eth\_\-packet\_\-length}, \hyperlink{classamiq__eth__packet__magic_a57354d611adb80b1a8f4ad00c4f307a3}{amiq\_\-eth\_\-packet\_\-magic}, \hyperlink{classamiq__eth__packet__pause_a7ea960bd9c079375b0d4cd72a762d695}{amiq\_\-eth\_\-packet\_\-pause}, \hyperlink{classamiq__eth__packet__pfc__pause_a58c67ea445a72bc6c1c584625d642899}{amiq\_\-eth\_\-packet\_\-pfc\_\-pause}, \hyperlink{classamiq__eth__packet__ptp_a52db9ab62ab743317a7ca4745a823a82}{amiq\_\-eth\_\-packet\_\-ptp}, and \hyperlink{classamiq__eth__packet__snap_af0ca9e38d460f39767d5abf60f48cee9}{amiq\_\-eth\_\-packet\_\-snap}.
+
+Definition at line 157 of file amiq\_\-eth\_\-packet.cpp.
+
+References AMIQ\_\-ETH\_\-FIELD\_\-SEPARATOR, destination\_\-address, preamble, sfd, and source\_\-address.\hypertarget{classamiq__eth__packet_a909eb3860185125564fa530496ed1c9e}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!do\_\-unpack@{do\_\-unpack}}
+\index{do\_\-unpack@{do\_\-unpack}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{do\_\-unpack}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet::do\_\-unpack ({\bf amiq\_\-eth\_\-packer} \& {\em packer})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet_a909eb3860185125564fa530496ed1c9e}
+
+
+Reimplemented from \hyperlink{classamiq__eth__object_aaa82659e656422df7dcf2cce578fc7d7}{amiq\_\-eth\_\-object}.
+
+Reimplemented in \hyperlink{classamiq__eth__packet__arp_afa8463360e8e62b24e1171093b00a798}{amiq\_\-eth\_\-packet\_\-arp}, \hyperlink{classamiq__eth__packet__ether__type_a0c86ef80c46bbed384739b23e5efb0ef}{amiq\_\-eth\_\-packet\_\-ether\_\-type}, \hyperlink{classamiq__eth__packet__ethernet__configuration__testing_aff2640ccc3b20b80b16bb6ab20842f76}{amiq\_\-eth\_\-packet\_\-ethernet\_\-configuration\_\-testing}, \hyperlink{classamiq__eth__packet__fcoe_afb550561999badc5693283b852be2f70}{amiq\_\-eth\_\-packet\_\-fcoe}, \hyperlink{classamiq__eth__packet__hsr__base_ae61de71bd90f7a1c605e094845af5ccc}{amiq\_\-eth\_\-packet\_\-hsr\_\-base}, \hyperlink{classamiq__eth__packet__hsr__standard_aac95578ea89db3bd0ec190ca87e731c8}{amiq\_\-eth\_\-packet\_\-hsr\_\-standard}, \hyperlink{classamiq__eth__packet__ipv4_af85e08566b37953edee4566c40400f05}{amiq\_\-eth\_\-packet\_\-ipv4}, \hyperlink{classamiq__eth__packet__jumbo_a2d1f1c25847363d774336f8828384635}{amiq\_\-eth\_\-packet\_\-jumbo}, \hyperlink{classamiq__eth__packet__length_ab496b25828caaf23edd5fa6d4729c578}{amiq\_\-eth\_\-packet\_\-length}, \hyperlink{classamiq__eth__packet__magic_a400a90ae523af44eb0c38ba64ea6afe7}{amiq\_\-eth\_\-packet\_\-magic}, \hyperlink{classamiq__eth__packet__pause_aa458964a73aa61bca99cb30ffa56f54c}{amiq\_\-eth\_\-packet\_\-pause}, \hyperlink{classamiq__eth__packet__pfc__pause_abc86009030a38ab03469c697ffec73f6}{amiq\_\-eth\_\-packet\_\-pfc\_\-pause}, \hyperlink{classamiq__eth__packet__ptp_a831addd66dff7e42f2e2e9edb6f976b3}{amiq\_\-eth\_\-packet\_\-ptp}, and \hyperlink{classamiq__eth__packet__snap_a7bb9ce14ff76d5bacb715a53382a7816}{amiq\_\-eth\_\-packet\_\-snap}.
+
+Definition at line 136 of file amiq\_\-eth\_\-packet.cpp.
+
+References amiq\_\-eth\_\-do\_\-unpack(), destination\_\-address, preamble, sfd, and source\_\-address.\hypertarget{classamiq__eth__packet_a2f1fcef6ebdffa00a9b34fc7eae1be5e}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!get\_\-correct\_\-fcs@{get\_\-correct\_\-fcs}}
+\index{get\_\-correct\_\-fcs@{get\_\-correct\_\-fcs}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{get\_\-correct\_\-fcs}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf amiq\_\-eth\_\-fcs} amiq\_\-eth\_\-packet::get\_\-correct\_\-fcs () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet_a2f1fcef6ebdffa00a9b34fc7eae1be5e}
+
+
+Definition at line 229 of file amiq\_\-eth\_\-packet.cpp.
+
+References amiq\_\-eth\_\-do\_\-unpack(), do\_\-pack\_\-for\_\-fcs(), get\_\-crc32\_\-802(), amiq\_\-eth\_\-packer::get\_\-remaining\_\-unpacked\_\-bits(), and amiq\_\-eth\_\-packer::reset().
+
+Referenced by amiq\_\-eth\_\-packet\_\-snap::do\_\-print(), amiq\_\-eth\_\-packet\_\-ptp::do\_\-print(), amiq\_\-eth\_\-packet\_\-magic::do\_\-print(), amiq\_\-eth\_\-packet\_\-jumbo::do\_\-print(), amiq\_\-eth\_\-packet\_\-ipv4::do\_\-print(), and amiq\_\-eth\_\-packet\_\-arp::do\_\-print().\hypertarget{classamiq__eth__packet_a52f95dacb2ead62a53d11491b8b3f445}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!get\_\-crc32\_\-802@{get\_\-crc32\_\-802}}
+\index{get\_\-crc32\_\-802@{get\_\-crc32\_\-802}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{get\_\-crc32\_\-802}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf amiq\_\-eth\_\-fcs} amiq\_\-eth\_\-packet::get\_\-crc32\_\-802 (unsigned char $\ast$ {\em byte\_\-data}, \/  unsigned int {\em length})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classamiq__eth__packet_a52f95dacb2ead62a53d11491b8b3f445}
+
+
+Definition at line 219 of file amiq\_\-eth\_\-packet.cpp.
+
+References get\_\-crc32\_\-ccitt(), and swap\_\-bytes().
+
+Referenced by get\_\-correct\_\-fcs().\hypertarget{classamiq__eth__packet_a873819b36fc796deb1e97bd7d18d4a67}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!get\_\-crc32\_\-ccitt@{get\_\-crc32\_\-ccitt}}
+\index{get\_\-crc32\_\-ccitt@{get\_\-crc32\_\-ccitt}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{get\_\-crc32\_\-ccitt}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf amiq\_\-eth\_\-fcs} amiq\_\-eth\_\-packet::get\_\-crc32\_\-ccitt (unsigned char $\ast$ {\em byte\_\-data}, \/  unsigned int {\em length})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classamiq__eth__packet_a873819b36fc796deb1e97bd7d18d4a67}
+
+
+Definition at line 199 of file amiq\_\-eth\_\-packet.cpp.
+
+References AMIQ\_\-ETH\_\-CRC32\_\-CCITT\_\-SEED, and crc32\_\-ccitt\_\-seed().
+
+Referenced by get\_\-crc32\_\-802().\hypertarget{classamiq__eth__packet_a1d83e7013b03e4cb3cccca9d4cae3a4e}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!swap\_\-bytes@{swap\_\-bytes}}
+\index{swap\_\-bytes@{swap\_\-bytes}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{swap\_\-bytes}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf amiq\_\-eth\_\-fcs} amiq\_\-eth\_\-packet::swap\_\-bytes ({\bf amiq\_\-eth\_\-fcs} {\em data})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}
+\label{classamiq__eth__packet_a1d83e7013b03e4cb3cccca9d4cae3a4e}
+
+
+Definition at line 203 of file amiq\_\-eth\_\-packet.cpp.
+
+Referenced by get\_\-crc32\_\-802().\hypertarget{classamiq__eth__packet_a6dd92751d8172eeaa347d71bb415b0d5}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!to\_\-generic\_\-payload@{to\_\-generic\_\-payload}}
+\index{to\_\-generic\_\-payload@{to\_\-generic\_\-payload}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{to\_\-generic\_\-payload}]{\setlength{\rightskip}{0pt plus 5cm}virtual tlm\_\-generic\_\-payload$\ast$ amiq\_\-eth\_\-packet::to\_\-generic\_\-payload () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet_a6dd92751d8172eeaa347d71bb415b0d5}
+
+
+Reimplemented in \hyperlink{classamiq__eth__packet__arp_a24f433f25d4cec2799e58a836c1411f0}{amiq\_\-eth\_\-packet\_\-arp}, \hyperlink{classamiq__eth__packet__ethernet__configuration__testing_a0134f20913a67a5dafe334a450be8bb3}{amiq\_\-eth\_\-packet\_\-ethernet\_\-configuration\_\-testing}, \hyperlink{classamiq__eth__packet__fcoe_aa341b2f7df8abf278713e98015565c9f}{amiq\_\-eth\_\-packet\_\-fcoe}, \hyperlink{classamiq__eth__packet__hsr__standard_aa145fe8cc2731124d2c9e0bfb61bacf2}{amiq\_\-eth\_\-packet\_\-hsr\_\-standard}, \hyperlink{classamiq__eth__packet__ipv4_aefadeb6546366f09657c03790fe4ce90}{amiq\_\-eth\_\-packet\_\-ipv4}, \hyperlink{classamiq__eth__packet__jumbo_a3d838f8920b63ead671eaab21483d74f}{amiq\_\-eth\_\-packet\_\-jumbo}, \hyperlink{classamiq__eth__packet__magic_adfe68e5b2702826b23d606caf90ab2bc}{amiq\_\-eth\_\-packet\_\-magic}, \hyperlink{classamiq__eth__packet__pause_ab59bd7087700e15e79018f72d809d76a}{amiq\_\-eth\_\-packet\_\-pause}, \hyperlink{classamiq__eth__packet__pfc__pause_aaf46b734371ab160eba8764a4e398516}{amiq\_\-eth\_\-packet\_\-pfc\_\-pause}, \hyperlink{classamiq__eth__packet__ptp_a7c1a6b1207ce7e9e604e05cd883bccc0}{amiq\_\-eth\_\-packet\_\-ptp}, and \hyperlink{classamiq__eth__packet__snap_a99256008f171d933ec625d7957b64270}{amiq\_\-eth\_\-packet\_\-snap}.
+
+Definition at line 166 of file amiq\_\-eth\_\-packet.cpp.
+
+References amiq\_\-eth\_\-do\_\-unpack(), amiq\_\-eth\_\-packer::get\_\-remaining\_\-unpacked\_\-bits(), amiq\_\-eth\_\-object::pack(), and amiq\_\-eth\_\-packer::reset().
+
+\subsection{Member Data Documentation}
+\hypertarget{classamiq__eth__packet_a03a4cb1ee40c7aaa8db2c8a8560086ae}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!destination\_\-address@{destination\_\-address}}
+\index{destination\_\-address@{destination\_\-address}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{destination\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-address} {\bf amiq\_\-eth\_\-packet::destination\_\-address}}}
+\label{classamiq__eth__packet_a03a4cb1ee40c7aaa8db2c8a8560086ae}
+
+
+Definition at line 100 of file amiq\_\-eth\_\-packet.cpp.
+
+Referenced by amiq\_\-eth\_\-packet\_\-pause::amiq\_\-eth\_\-packet\_\-pause(), amiq\_\-eth\_\-packet\_\-pfc\_\-pause::amiq\_\-eth\_\-packet\_\-pfc\_\-pause(), do\_\-pack(), do\_\-print(), and do\_\-unpack().\hypertarget{classamiq__eth__packet_a4e1eca2891cd445b62dbd17a98a5fc22}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!min\_\-frame\_\-size@{min\_\-frame\_\-size}}
+\index{min\_\-frame\_\-size@{min\_\-frame\_\-size}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{min\_\-frame\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf amiq\_\-eth\_\-packet::min\_\-frame\_\-size}}}
+\label{classamiq__eth__packet_a4e1eca2891cd445b62dbd17a98a5fc22}
+
+
+Definition at line 105 of file amiq\_\-eth\_\-packet.cpp.
+
+Referenced by amiq\_\-eth\_\-packet(), and amiq\_\-eth\_\-packet\_\-ipv4::get\_\-pad\_\-size().\hypertarget{classamiq__eth__packet_a222c60f5498580313a81f07c58782d4c}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!preamble@{preamble}}
+\index{preamble@{preamble}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{preamble}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-preamble} {\bf amiq\_\-eth\_\-packet::preamble}}}
+\label{classamiq__eth__packet_a222c60f5498580313a81f07c58782d4c}
+
+
+Definition at line 94 of file amiq\_\-eth\_\-packet.cpp.
+
+Referenced by do\_\-pack(), do\_\-print(), and do\_\-unpack().\hypertarget{classamiq__eth__packet_a03b98e9cda79e6715ac4b38f2ca51569}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!sfd@{sfd}}
+\index{sfd@{sfd}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{sfd}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-sfd} {\bf amiq\_\-eth\_\-packet::sfd}}}
+\label{classamiq__eth__packet_a03b98e9cda79e6715ac4b38f2ca51569}
+
+
+Definition at line 97 of file amiq\_\-eth\_\-packet.cpp.
+
+Referenced by do\_\-pack(), do\_\-print(), and do\_\-unpack().\hypertarget{classamiq__eth__packet_a04153feceffaf9c897706f2143261980}{
+\index{amiq\_\-eth\_\-packet@{amiq\_\-eth\_\-packet}!source\_\-address@{source\_\-address}}
+\index{source\_\-address@{source\_\-address}!amiq_eth_packet@{amiq\_\-eth\_\-packet}}
+\subsubsection[{source\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-address} {\bf amiq\_\-eth\_\-packet::source\_\-address}}}
+\label{classamiq__eth__packet_a04153feceffaf9c897706f2143261980}
+
+
+Definition at line 103 of file amiq\_\-eth\_\-packet.cpp.
+
+Referenced by do\_\-pack(), do\_\-print(), and do\_\-unpack().
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/cristian.slav/work/amiq/projects/sv/amiq\_\-eth/sc/\hyperlink{amiq__eth__packet_8cpp}{amiq\_\-eth\_\-packet.cpp}\end{DoxyCompactItemize}

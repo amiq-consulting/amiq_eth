@@ -1,0 +1,156 @@
+body, h1, h2, h3, h4, h5, h6, p, table, td, caption, th, ul, ol, dl, li, dd, dt {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000
+}
+
+body {
+    margin-left: 1em;
+}
+
+h1, h2, h3 {
+    color: #111;
+    font-size: 1.5em;
+    padding: 0.5;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+table {
+    border-collapse: collapse;
+	margin: 1em 0 1em 0;
+}
+
+th {
+    background-color: #ccccff;
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid #CCC;
+    padding: 6px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+hr {
+    border: 0px;
+    background-color: #CCC;
+    height: 2px;
+}
+
+pre {
+	font-size: 1.25em;	
+}
+
+.description {
+    padding: 3px 1em 0 1em;
+    margin: 0;
+    border: 0;
+    font-size: 0.85em;
+}
+
+.menuGroup {
+	padding: 0.25em;
+    margin-top: 1em;
+	margin-bottom: 1em;
+    background-color: #ccccff;
+}
+
+.menuGroup li, .menuGroup ul {
+    list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.floatRight {
+	font-size: 0.75em;
+	float: right;
+}
+
+.fileSummary a {
+    background-color: #ccccff;
+	padding: 2px 5px 2px 5px;
+}
+
+.functionSignature {
+	font-family: monospace;
+}
+
+.returnType {
+	font-family: monospace;
+}
+
+.classHierarchy {
+	font-family: monospace;
+}
+
+#logoTable, #logoTable td {
+	border: none;
+}
+
+#bottomPart {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 0.75em;
+}
+
+
+.indent {
+	padding: 0 0 0 1em;
+	margin:0;	
+}
+/***** mktree *****/
+/* Turn off list bullets */
+ul.mktree li {
+    list-style: none;
+}
+
+/* Control how "spaced out" the tree is */
+ul.mktree, ul.mktree ul, ul.mktree li {
+    margin: 0;
+    padding: 0 0 0 0.5em;
+}
+
+/* Provide space for our own "bullet" inside the LI */
+ul.mktree li .bullet {
+    padding-left: 12px;
+}
+
+/* Show "bullets" in the links, depending on the class of the LI that the link's in */
+ul.mktree li.liOpen .bullet {
+    cursor: pointer;
+    background: url(minus.gif) center left no-repeat;
+}
+
+ul.mktree li.liClosed .bullet {
+    cursor: pointer;
+    background: url(plus.gif) center left no-repeat;
+}
+
+ul.mktree li.liBullet .bullet {
+    padding-left: 12px;
+    cursor: default;
+    background: none;
+}
+
+/* Sublists are visible or not based on class of parent LI */
+ul.mktree li.liOpen ul {
+    display: block;
+}
+
+ul.mktree li.liClosed ul {
+    display: none;
+}
+
+/* Format menu items differently depending on what level of the tree they are in */
+/*ul.mktree  li { font-size: 14pt; }
+ ul.mktree  li ul li { font-size: 12pt; }
+ ul.mktree  li ul li ul li { font-size: 10pt; }
+ ul.mktree  li ul li ul li ul li { font-size: 10pt; }*/ 
+ 

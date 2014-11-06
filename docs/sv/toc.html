@@ -1,0 +1,106 @@
+
+<html>
+	<head>
+		<title>
+			amiq_eth
+API Specification
+		</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="jq.css" rel="stylesheet" type="text/css"/>
+<script src="jq.js"></script>
+<script src="search.js"></script>
+<script>
+  $(document).ready(function() {
+    $("input#autocomplete").catcomplete({
+    autoFocus: true,
+    source: SEARCH_INDEX,
+    select: function( event, ui ) {
+        parent.elementFrame.location.href = ui.item.link;
+        return false;
+    }
+    
+    });
+  });
+</script>
+<script src="mktree.js" language="javascript"></script>
+<script type="text/javascript">
+function windowTitle() {
+    parent.document.title=document.title;
+}
+function toggleText(id) {
+	var expandedStyle = document.getElementById('expanded'+id).style;
+	var collapsedStyle = document.getElementById('collapsed'+id).style;
+	if (expandedStyle.display == 'block') {
+		expandedStyle.display = 'none';
+		collapsedStyle.display = 'block';
+	} else {
+		expandedStyle.display = 'block';
+		collapsedStyle.display = 'none';
+	}
+}
+</script>	</head>
+
+
+	<body onload="windowTitle();" bgcolor="white">
+
+			<h2>amiq_eth</h2>
+			<h3>API Specification</h3>
+        <div style="background:url('search.png') no-repeat;">
+	        <div class="ui-widget" style="margin-left:21px" >
+	            <input id="autocomplete" />
+	        </div>
+        </div>
+		<div class="menuGroup">
+			<a target="elementFrame" href="summary-overview.html">Overview</a>
+		</div>
+
+			<div class="menuGroup">
+				<ul>
+						<li><a target="elementFrame" href="summary-module-global.html">Modules</a></li>
+						<li><a target="elementFrame" href="summary-macro-global.html">Macros</a></li>
+				<ul>
+			</div>
+		
+
+			<div class="menuGroup">
+				Packages
+					<ul class="mktree">
+						<li><a target="elementFrame" href=summary-amiq_eth_pkg.html>amiq_eth_pkg</a><ul>
+								<li><a target="elementFrame" href="summary-typedef-amiq_eth_pkg.html">Typedefs</a></li>
+								<li><a target="elementFrame" href="summary-enum-amiq_eth_pkg.html">Enums</a></li>
+								<li><a target="elementFrame" href="summary-class-amiq_eth_pkg.html">Classes</a></li>
+
+						</ul></li>
+					</ul>
+			</div>
+
+
+
+		<div class="menuGroup">
+			<a target="elementFrame" href="summary.html">Index</a>
+		</div>
+
+
+
+		<table id="logoTable" width="100%" cellpadding="1" cellspacing="0" id="navtable" align="right">
+		    <tbody>
+		        <tr>
+		            <td rowspan="3" valign="top" align="right">
+		                <em>
+		                	<a style="text-decoration: none; color: #333;" href="http://www.dvteclipse.com" target="_new"><b>Specador
+		                            <sup>TM</sup><br></>Version 3.5.25
+		                        </b>
+		                    </a>
+		                </em>
+		            </td>
+		            <td>
+		                <a href="http://www.amiq.com" target="_new" style="display: inline; float: right; padding: 7px; width: 91px; height: 48px; background: transparent url(amiq.png) center center no-repeat;"></a>
+		            </td>
+		        </tr>
+		    </tbody>
+		</table>
+
+	</body>
+</html>
+

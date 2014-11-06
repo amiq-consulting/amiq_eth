@@ -1,0 +1,235 @@
+\hypertarget{classamiq__eth__packer}{
+\section{amiq\_\-eth\_\-packer Class Reference}
+\label{classamiq__eth__packer}\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamiq__eth__packer_ad503914eb2cb923d5ba7b767f88f0b7f}{amiq\_\-eth\_\-packer} ()
+\item 
+virtual \hyperlink{classamiq__eth__packer_a87fda1fe83328486346166ee2fea0382}{$\sim$amiq\_\-eth\_\-packer} ()
+\item 
+virtual \hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \& \hyperlink{classamiq__eth__packer_adbe11f8c9700a57579712e4ec93f379c}{operator$<$$<$} (bool a)
+\item 
+virtual \hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \& \hyperlink{classamiq__eth__packer_a5ac87df11ad060f344d99c1438ac0d3f}{operator$>$$>$} (bool \&a)
+\item 
+virtual void \hyperlink{classamiq__eth__packer_a914e685316dcc50d6f722df3f35455c7}{reset} ()
+\item 
+virtual int \hyperlink{classamiq__eth__packer_a471a75ac1b30c5514c1e3e872cf2cee3}{get\_\-remaining\_\-unpacked\_\-bits} ()
+\item 
+void \hyperlink{classamiq__eth__packer_a17d66f0e67b9b2d85dfe047363bd7a92}{get\_\-bytes} (std::vector$<$ char $>$ \&data)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classamiq__eth__packer_a96f5c9604c2f26808693738fc3ccc559}{allocate} (int number\_\-of\_\-bits)
+\item 
+void \hyperlink{classamiq__eth__packer_a254b9bc4b64955eab0e05c2ee0e5b71a}{check\_\-size} (int number\_\-of\_\-bits)
+\item 
+void \hyperlink{classamiq__eth__packer_a9bf86e302dc4da5c4ff9947746a37d10}{inc\_\-unpack\_\-index} (int number\_\-of\_\-bits)
+\item 
+void \hyperlink{classamiq__eth__packer_a3c0488109ff70104c0daa0ec8b180d15}{pack\_\-int\_\-n} (unsigned long long data, unsigned number\_\-of\_\-bits)
+\item 
+uint64 \hyperlink{classamiq__eth__packer_aefe67bda34ca7585005e3a0fbfc7f9e1}{unpack\_\-int\_\-n} (unsigned number\_\-of\_\-bits)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classamiq__eth__packer_a02e2192acef20608462656554e21646b}{pack\_\-index}
+\item 
+unsigned int \hyperlink{classamiq__eth__packer_a04bf30a6893a4079fc1093af6dc999b9}{unpack\_\-index}
+\item 
+sc\_\-bv\_\-base $\ast$ \hyperlink{classamiq__eth__packer_a5b4237c5e55bc859644dcad30b252738}{information\_\-bits}
+\item 
+int \hyperlink{classamiq__eth__packer_a07f2906c680407d101afb9ac2c5d42f6}{size}
+\item 
+int \hyperlink{classamiq__eth__packer_a3fc5556f660d26c71d69f732c9ddb80f}{max\_\-size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file amiq\_\-eth\_\-packer.cpp.
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classamiq__eth__packer_ad503914eb2cb923d5ba7b767f88f0b7f}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}}
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{amiq\_\-eth\_\-packer}]{\setlength{\rightskip}{0pt plus 5cm}amiq\_\-eth\_\-packer::amiq\_\-eth\_\-packer ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classamiq__eth__packer_ad503914eb2cb923d5ba7b767f88f0b7f}
+
+
+Definition at line 123 of file amiq\_\-eth\_\-packer.cpp.
+
+References information\_\-bits, max\_\-size, pack\_\-index, size, and unpack\_\-index.\hypertarget{classamiq__eth__packer_a87fda1fe83328486346166ee2fea0382}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!$\sim$amiq\_\-eth\_\-packer@{$\sim$amiq\_\-eth\_\-packer}}
+\index{$\sim$amiq\_\-eth\_\-packer@{$\sim$amiq\_\-eth\_\-packer}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{$\sim$amiq\_\-eth\_\-packer}]{\setlength{\rightskip}{0pt plus 5cm}virtual amiq\_\-eth\_\-packer::$\sim$amiq\_\-eth\_\-packer ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packer_a87fda1fe83328486346166ee2fea0382}
+
+
+Definition at line 132 of file amiq\_\-eth\_\-packer.cpp.
+
+References information\_\-bits.
+
+\subsection{Member Function Documentation}
+\hypertarget{classamiq__eth__packer_a96f5c9604c2f26808693738fc3ccc559}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!allocate@{allocate}}
+\index{allocate@{allocate}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{allocate}]{\setlength{\rightskip}{0pt plus 5cm}void amiq\_\-eth\_\-packer::allocate (int {\em number\_\-of\_\-bits})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classamiq__eth__packer_a96f5c9604c2f26808693738fc3ccc559}
+
+
+Definition at line 49 of file amiq\_\-eth\_\-packer.cpp.
+
+References AMIQ\_\-ETH\_\-PACKING\_\-BLOCK\_\-SIZE, information\_\-bits, max\_\-size, pack\_\-index, and size.
+
+Referenced by check\_\-size().\hypertarget{classamiq__eth__packer_a254b9bc4b64955eab0e05c2ee0e5b71a}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!check\_\-size@{check\_\-size}}
+\index{check\_\-size@{check\_\-size}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{check\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}void amiq\_\-eth\_\-packer::check\_\-size (int {\em number\_\-of\_\-bits})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classamiq__eth__packer_a254b9bc4b64955eab0e05c2ee0e5b71a}
+
+
+Definition at line 79 of file amiq\_\-eth\_\-packer.cpp.
+
+References allocate(), pack\_\-index, and size.
+
+Referenced by pack\_\-int\_\-n().\hypertarget{classamiq__eth__packer_a17d66f0e67b9b2d85dfe047363bd7a92}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!get\_\-bytes@{get\_\-bytes}}
+\index{get\_\-bytes@{get\_\-bytes}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{get\_\-bytes}]{\setlength{\rightskip}{0pt plus 5cm}void amiq\_\-eth\_\-packer::get\_\-bytes (std::vector$<$ char $>$ \& {\em data})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classamiq__eth__packer_a17d66f0e67b9b2d85dfe047363bd7a92}
+
+
+Definition at line 166 of file amiq\_\-eth\_\-packer.cpp.
+
+References get\_\-remaining\_\-unpacked\_\-bits().
+
+Referenced by amiq\_\-eth\_\-packet\_\-magic::get\_\-useful\_\-info\_\-from\_\-client\_\-data(), and amiq\_\-eth\_\-packet\_\-magic::set\_\-useful\_\-info\_\-in\_\-client\_\-data().\hypertarget{classamiq__eth__packer_a471a75ac1b30c5514c1e3e872cf2cee3}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!get\_\-remaining\_\-unpacked\_\-bits@{get\_\-remaining\_\-unpacked\_\-bits}}
+\index{get\_\-remaining\_\-unpacked\_\-bits@{get\_\-remaining\_\-unpacked\_\-bits}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{get\_\-remaining\_\-unpacked\_\-bits}]{\setlength{\rightskip}{0pt plus 5cm}virtual int amiq\_\-eth\_\-packer::get\_\-remaining\_\-unpacked\_\-bits ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packer_a471a75ac1b30c5514c1e3e872cf2cee3}
+
+
+Definition at line 160 of file amiq\_\-eth\_\-packer.cpp.
+
+References pack\_\-index, and unpack\_\-index.
+
+Referenced by get\_\-bytes(), amiq\_\-eth\_\-packet::get\_\-correct\_\-fcs(), amiq\_\-eth\_\-object::pack(), amiq\_\-eth\_\-packet::to\_\-generic\_\-payload(), and amiq\_\-eth\_\-object::unpack().\hypertarget{classamiq__eth__packer_a9bf86e302dc4da5c4ff9947746a37d10}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!inc\_\-unpack\_\-index@{inc\_\-unpack\_\-index}}
+\index{inc\_\-unpack\_\-index@{inc\_\-unpack\_\-index}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{inc\_\-unpack\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}void amiq\_\-eth\_\-packer::inc\_\-unpack\_\-index (int {\em number\_\-of\_\-bits})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classamiq__eth__packer_a9bf86e302dc4da5c4ff9947746a37d10}
+
+
+Definition at line 92 of file amiq\_\-eth\_\-packer.cpp.
+
+References pack\_\-index, and unpack\_\-index.
+
+Referenced by unpack\_\-int\_\-n().\hypertarget{classamiq__eth__packer_adbe11f8c9700a57579712e4ec93f379c}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf amiq\_\-eth\_\-packer}\& amiq\_\-eth\_\-packer::operator$<$$<$ (bool {\em a})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packer_adbe11f8c9700a57579712e4ec93f379c}
+
+
+Definition at line 139 of file amiq\_\-eth\_\-packer.cpp.
+
+References pack\_\-int\_\-n().\hypertarget{classamiq__eth__packer_a5ac87df11ad060f344d99c1438ac0d3f}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf amiq\_\-eth\_\-packer}\& amiq\_\-eth\_\-packer::operator$>$$>$ (bool \& {\em a})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packer_a5ac87df11ad060f344d99c1438ac0d3f}
+
+
+Definition at line 146 of file amiq\_\-eth\_\-packer.cpp.
+
+References unpack\_\-int\_\-n().\hypertarget{classamiq__eth__packer_a3c0488109ff70104c0daa0ec8b180d15}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!pack\_\-int\_\-n@{pack\_\-int\_\-n}}
+\index{pack\_\-int\_\-n@{pack\_\-int\_\-n}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{pack\_\-int\_\-n}]{\setlength{\rightskip}{0pt plus 5cm}void amiq\_\-eth\_\-packer::pack\_\-int\_\-n (unsigned long long {\em data}, \/  unsigned {\em number\_\-of\_\-bits})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classamiq__eth__packer_a3c0488109ff70104c0daa0ec8b180d15}
+
+
+Definition at line 104 of file amiq\_\-eth\_\-packer.cpp.
+
+References check\_\-size(), and pack\_\-index.
+
+Referenced by operator$<$$<$().\hypertarget{classamiq__eth__packer_a914e685316dcc50d6f722df3f35455c7}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!reset@{reset}}
+\index{reset@{reset}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packer::reset ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packer_a914e685316dcc50d6f722df3f35455c7}
+
+
+Definition at line 152 of file amiq\_\-eth\_\-packer.cpp.
+
+References pack\_\-index, size, and unpack\_\-index.
+
+Referenced by amiq\_\-eth\_\-packet::get\_\-correct\_\-fcs(), amiq\_\-eth\_\-packet\_\-magic::get\_\-useful\_\-info\_\-from\_\-client\_\-data(), amiq\_\-eth\_\-packet\_\-magic::set\_\-useful\_\-info\_\-in\_\-client\_\-data(), and amiq\_\-eth\_\-packet::to\_\-generic\_\-payload().\hypertarget{classamiq__eth__packer_aefe67bda34ca7585005e3a0fbfc7f9e1}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!unpack\_\-int\_\-n@{unpack\_\-int\_\-n}}
+\index{unpack\_\-int\_\-n@{unpack\_\-int\_\-n}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{unpack\_\-int\_\-n}]{\setlength{\rightskip}{0pt plus 5cm}uint64 amiq\_\-eth\_\-packer::unpack\_\-int\_\-n (unsigned {\em number\_\-of\_\-bits})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}
+\label{classamiq__eth__packer_aefe67bda34ca7585005e3a0fbfc7f9e1}
+
+
+Definition at line 113 of file amiq\_\-eth\_\-packer.cpp.
+
+References inc\_\-unpack\_\-index(), and unpack\_\-index.
+
+Referenced by operator$>$$>$().
+
+\subsection{Member Data Documentation}
+\hypertarget{classamiq__eth__packer_a5b4237c5e55bc859644dcad30b252738}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!information\_\-bits@{information\_\-bits}}
+\index{information\_\-bits@{information\_\-bits}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{information\_\-bits}]{\setlength{\rightskip}{0pt plus 5cm}sc\_\-bv\_\-base$\ast$ {\bf amiq\_\-eth\_\-packer::information\_\-bits}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classamiq__eth__packer_a5b4237c5e55bc859644dcad30b252738}
+
+
+Definition at line 37 of file amiq\_\-eth\_\-packer.cpp.
+
+Referenced by allocate(), amiq\_\-eth\_\-packer(), and $\sim$amiq\_\-eth\_\-packer().\hypertarget{classamiq__eth__packer_a3fc5556f660d26c71d69f732c9ddb80f}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!max\_\-size@{max\_\-size}}
+\index{max\_\-size@{max\_\-size}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{max\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf amiq\_\-eth\_\-packer::max\_\-size}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classamiq__eth__packer_a3fc5556f660d26c71d69f732c9ddb80f}
+
+
+Definition at line 43 of file amiq\_\-eth\_\-packer.cpp.
+
+Referenced by allocate(), and amiq\_\-eth\_\-packer().\hypertarget{classamiq__eth__packer_a02e2192acef20608462656554e21646b}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!pack\_\-index@{pack\_\-index}}
+\index{pack\_\-index@{pack\_\-index}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{pack\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf amiq\_\-eth\_\-packer::pack\_\-index}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classamiq__eth__packer_a02e2192acef20608462656554e21646b}
+
+
+Definition at line 31 of file amiq\_\-eth\_\-packer.cpp.
+
+Referenced by allocate(), amiq\_\-eth\_\-packer(), check\_\-size(), get\_\-remaining\_\-unpacked\_\-bits(), inc\_\-unpack\_\-index(), pack\_\-int\_\-n(), and reset().\hypertarget{classamiq__eth__packer_a07f2906c680407d101afb9ac2c5d42f6}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!size@{size}}
+\index{size@{size}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf amiq\_\-eth\_\-packer::size}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classamiq__eth__packer_a07f2906c680407d101afb9ac2c5d42f6}
+
+
+Definition at line 40 of file amiq\_\-eth\_\-packer.cpp.
+
+Referenced by allocate(), amiq\_\-eth\_\-packer(), check\_\-size(), and reset().\hypertarget{classamiq__eth__packer_a04bf30a6893a4079fc1093af6dc999b9}{
+\index{amiq\_\-eth\_\-packer@{amiq\_\-eth\_\-packer}!unpack\_\-index@{unpack\_\-index}}
+\index{unpack\_\-index@{unpack\_\-index}!amiq_eth_packer@{amiq\_\-eth\_\-packer}}
+\subsubsection[{unpack\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf amiq\_\-eth\_\-packer::unpack\_\-index}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{classamiq__eth__packer_a04bf30a6893a4079fc1093af6dc999b9}
+
+
+Definition at line 34 of file amiq\_\-eth\_\-packer.cpp.
+
+Referenced by amiq\_\-eth\_\-packer(), get\_\-remaining\_\-unpacked\_\-bits(), inc\_\-unpack\_\-index(), reset(), and unpack\_\-int\_\-n().
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/cristian.slav/work/amiq/projects/sv/amiq\_\-eth/sc/\hyperlink{amiq__eth__packer_8cpp}{amiq\_\-eth\_\-packer.cpp}\end{DoxyCompactItemize}

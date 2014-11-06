@@ -1,0 +1,127 @@
+\hypertarget{classamiq__eth__packet__length}{
+\section{amiq\_\-eth\_\-packet\_\-length Class Reference}
+\label{classamiq__eth__packet__length}\index{amiq\_\-eth\_\-packet\_\-length@{amiq\_\-eth\_\-packet\_\-length}}
+}
+Inheritance diagram for amiq\_\-eth\_\-packet\_\-length::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classamiq__eth__packet__length}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamiq__eth__packet__length_a7967fef155cea572ef45f46baaa2e9a4}{amiq\_\-eth\_\-packet\_\-length} ()
+\item 
+virtual \hyperlink{classamiq__eth__packet__length_aa58226b9a57fb5a13ed5914686d2e5c1}{$\sim$amiq\_\-eth\_\-packet\_\-length} ()
+\item 
+virtual void \hyperlink{classamiq__eth__packet__length_a2caccb08da11dbb3ab39178bc41bca75}{do\_\-print} (ostream \&out) const 
+\item 
+virtual void \hyperlink{classamiq__eth__packet__length_a0e4e4b570a84eda1274ff8f0e76b45df}{do\_\-pack} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer) const 
+\item 
+virtual void \hyperlink{classamiq__eth__packet__length_ab496b25828caaf23edd5fa6d4729c578}{do\_\-unpack} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{amiq__eth__types_8cpp_a4d2be172e6524c991fe389337947afc0}{amiq\_\-eth\_\-length\_\-type} \hyperlink{classamiq__eth__packet__length_aed41233fe35015c65e02b57a496e2072}{length\_\-type}
+\item 
+\hyperlink{amiq__eth__types_8cpp_a3595a0a508d433d383d3e5521fc0b723}{amiq\_\-eth\_\-data} $\ast$ \hyperlink{classamiq__eth__packet__length_a66584df88e48a4d67f104806d762636a}{payload}
+\item 
+\hyperlink{amiq__eth__types_8cpp_adb511dc715b55539c6abdad1de981a9f}{amiq\_\-eth\_\-fcs} \hyperlink{classamiq__eth__packet__length_a955aef311a4f2fb0e7d9f10aa756e68a}{fcs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file amiq\_\-eth\_\-packet\_\-length.cpp.
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classamiq__eth__packet__length_a7967fef155cea572ef45f46baaa2e9a4}{
+\index{amiq\_\-eth\_\-packet\_\-length@{amiq\_\-eth\_\-packet\_\-length}!amiq\_\-eth\_\-packet\_\-length@{amiq\_\-eth\_\-packet\_\-length}}
+\index{amiq\_\-eth\_\-packet\_\-length@{amiq\_\-eth\_\-packet\_\-length}!amiq_eth_packet_length@{amiq\_\-eth\_\-packet\_\-length}}
+\subsubsection[{amiq\_\-eth\_\-packet\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}amiq\_\-eth\_\-packet\_\-length::amiq\_\-eth\_\-packet\_\-length ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classamiq__eth__packet__length_a7967fef155cea572ef45f46baaa2e9a4}
+
+
+Definition at line 46 of file amiq\_\-eth\_\-packet\_\-length.cpp.
+
+References NULL, and payload.\hypertarget{classamiq__eth__packet__length_aa58226b9a57fb5a13ed5914686d2e5c1}{
+\index{amiq\_\-eth\_\-packet\_\-length@{amiq\_\-eth\_\-packet\_\-length}!$\sim$amiq\_\-eth\_\-packet\_\-length@{$\sim$amiq\_\-eth\_\-packet\_\-length}}
+\index{$\sim$amiq\_\-eth\_\-packet\_\-length@{$\sim$amiq\_\-eth\_\-packet\_\-length}!amiq_eth_packet_length@{amiq\_\-eth\_\-packet\_\-length}}
+\subsubsection[{$\sim$amiq\_\-eth\_\-packet\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}virtual amiq\_\-eth\_\-packet\_\-length::$\sim$amiq\_\-eth\_\-packet\_\-length ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__length_aa58226b9a57fb5a13ed5914686d2e5c1}
+
+
+Definition at line 51 of file amiq\_\-eth\_\-packet\_\-length.cpp.
+
+References payload.
+
+\subsection{Member Function Documentation}
+\hypertarget{classamiq__eth__packet__length_a0e4e4b570a84eda1274ff8f0e76b45df}{
+\index{amiq\_\-eth\_\-packet\_\-length@{amiq\_\-eth\_\-packet\_\-length}!do\_\-pack@{do\_\-pack}}
+\index{do\_\-pack@{do\_\-pack}!amiq_eth_packet_length@{amiq\_\-eth\_\-packet\_\-length}}
+\subsubsection[{do\_\-pack}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-length::do\_\-pack ({\bf amiq\_\-eth\_\-packer} \& {\em packer}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__length_a0e4e4b570a84eda1274ff8f0e76b45df}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet_ab580d89fb44208f5a0fe31443619473e}{amiq\_\-eth\_\-packet}.
+
+Definition at line 63 of file amiq\_\-eth\_\-packet\_\-length.cpp.
+
+References amiq\_\-eth\_\-do\_\-pack(), fcs, length\_\-type, and payload.\hypertarget{classamiq__eth__packet__length_a2caccb08da11dbb3ab39178bc41bca75}{
+\index{amiq\_\-eth\_\-packet\_\-length@{amiq\_\-eth\_\-packet\_\-length}!do\_\-print@{do\_\-print}}
+\index{do\_\-print@{do\_\-print}!amiq_eth_packet_length@{amiq\_\-eth\_\-packet\_\-length}}
+\subsubsection[{do\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-length::do\_\-print (ostream \& {\em out}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__length_a2caccb08da11dbb3ab39178bc41bca75}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet_aa179c700ae183f1b884a9222a73fed4e}{amiq\_\-eth\_\-packet}.
+
+Definition at line 57 of file amiq\_\-eth\_\-packet\_\-length.cpp.\hypertarget{classamiq__eth__packet__length_ab496b25828caaf23edd5fa6d4729c578}{
+\index{amiq\_\-eth\_\-packet\_\-length@{amiq\_\-eth\_\-packet\_\-length}!do\_\-unpack@{do\_\-unpack}}
+\index{do\_\-unpack@{do\_\-unpack}!amiq_eth_packet_length@{amiq\_\-eth\_\-packet\_\-length}}
+\subsubsection[{do\_\-unpack}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-length::do\_\-unpack ({\bf amiq\_\-eth\_\-packer} \& {\em packer})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__length_ab496b25828caaf23edd5fa6d4729c578}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet_a909eb3860185125564fa530496ed1c9e}{amiq\_\-eth\_\-packet}.
+
+Definition at line 77 of file amiq\_\-eth\_\-packet\_\-length.cpp.
+
+References amiq\_\-eth\_\-do\_\-unpack(), fcs, length\_\-type, and payload.
+
+\subsection{Member Data Documentation}
+\hypertarget{classamiq__eth__packet__length_a955aef311a4f2fb0e7d9f10aa756e68a}{
+\index{amiq\_\-eth\_\-packet\_\-length@{amiq\_\-eth\_\-packet\_\-length}!fcs@{fcs}}
+\index{fcs@{fcs}!amiq_eth_packet_length@{amiq\_\-eth\_\-packet\_\-length}}
+\subsubsection[{fcs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-fcs} {\bf amiq\_\-eth\_\-packet\_\-length::fcs}}}
+\label{classamiq__eth__packet__length_a955aef311a4f2fb0e7d9f10aa756e68a}
+
+
+Definition at line 43 of file amiq\_\-eth\_\-packet\_\-length.cpp.
+
+Referenced by do\_\-pack(), and do\_\-unpack().\hypertarget{classamiq__eth__packet__length_aed41233fe35015c65e02b57a496e2072}{
+\index{amiq\_\-eth\_\-packet\_\-length@{amiq\_\-eth\_\-packet\_\-length}!length\_\-type@{length\_\-type}}
+\index{length\_\-type@{length\_\-type}!amiq_eth_packet_length@{amiq\_\-eth\_\-packet\_\-length}}
+\subsubsection[{length\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-length\_\-type} {\bf amiq\_\-eth\_\-packet\_\-length::length\_\-type}}}
+\label{classamiq__eth__packet__length_aed41233fe35015c65e02b57a496e2072}
+
+
+Definition at line 37 of file amiq\_\-eth\_\-packet\_\-length.cpp.
+
+Referenced by do\_\-pack(), and do\_\-unpack().\hypertarget{classamiq__eth__packet__length_a66584df88e48a4d67f104806d762636a}{
+\index{amiq\_\-eth\_\-packet\_\-length@{amiq\_\-eth\_\-packet\_\-length}!payload@{payload}}
+\index{payload@{payload}!amiq_eth_packet_length@{amiq\_\-eth\_\-packet\_\-length}}
+\subsubsection[{payload}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-data}$\ast$ {\bf amiq\_\-eth\_\-packet\_\-length::payload}}}
+\label{classamiq__eth__packet__length_a66584df88e48a4d67f104806d762636a}
+
+
+Definition at line 40 of file amiq\_\-eth\_\-packet\_\-length.cpp.
+
+Referenced by amiq\_\-eth\_\-packet\_\-length(), do\_\-pack(), do\_\-unpack(), and $\sim$amiq\_\-eth\_\-packet\_\-length().
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/cristian.slav/work/amiq/projects/sv/amiq\_\-eth/sc/\hyperlink{amiq__eth__packet__length_8cpp}{amiq\_\-eth\_\-packet\_\-length.cpp}\end{DoxyCompactItemize}

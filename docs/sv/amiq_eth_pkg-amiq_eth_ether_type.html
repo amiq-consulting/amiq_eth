@@ -1,0 +1,676 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="collection" content="api">
+        <title>amiq_eth
+API Specification</title>
+        <meta name="keywords" content="amiq_eth
+API Specification">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="jq.css" rel="stylesheet" type="text/css"/>
+<script src="jq.js"></script>
+<script src="search.js"></script>
+<script>
+  $(document).ready(function() {
+    $("input#autocomplete").catcomplete({
+    autoFocus: true,
+    source: SEARCH_INDEX,
+    select: function( event, ui ) {
+        parent.elementFrame.location.href = ui.item.link;
+        return false;
+    }
+    
+    });
+  });
+</script>
+<script src="mktree.js" language="javascript"></script>
+<script type="text/javascript">
+function windowTitle() {
+    parent.document.title=document.title;
+}
+function toggleText(id) {
+	var expandedStyle = document.getElementById('expanded'+id).style;
+	var collapsedStyle = document.getElementById('collapsed'+id).style;
+	if (expandedStyle.display == 'block') {
+		expandedStyle.display = 'none';
+		collapsedStyle.display = 'block';
+	} else {
+		expandedStyle.display = 'block';
+		collapsedStyle.display = 'none';
+	}
+}
+</script>        </head>
+<body onload="windowTitle();" bgcolor="white">
+
+	<h2>enum  		<a href="summary-amiq_eth_pkg.html">amiq_eth_pkg</a>
+:: amiq_eth_ether_type</h2>
+
+<hr>
+
+	<table width="100%">
+		<tbody>
+			<tr class="elementsTableHeading">
+	<th colspan="2">
+        <a name="values">Values</a>
+	</th>
+			</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_AARP"><b>AMIQ_ETH_AARP</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_APPLE_TALK"><b>AMIQ_ETH_APPLE_TALK</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_ARP"><b>AMIQ_ETH_ARP</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_ATA_OVER_ETHERNET"><b>AMIQ_ETH_ATA_OVER_ETHERNET</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_CFM_OAM"><b>AMIQ_ETH_CFM_OAM</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_COBRANET"><b>AMIQ_ETH_COBRANET</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_DECNET_PHASE_IV"><b>AMIQ_ETH_DECNET_PHASE_IV</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_EAP_OVER_LAN"><b>AMIQ_ETH_EAP_OVER_LAN</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_ETHERCAT"><b>AMIQ_ETH_ETHERCAT</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_ETHERNET_CONFIGURATION_TESTING_PROTOCOL"><b>AMIQ_ETH_ETHERNET_CONFIGURATION_TESTING_PROTOCOL</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_FCOE"><b>AMIQ_ETH_FCOE</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_FCOE_INIT"><b>AMIQ_ETH_FCOE_INIT</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_HOMEPLUG"><b>AMIQ_ETH_HOMEPLUG</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_HOMEPLUG_AV_MME"><b>AMIQ_ETH_HOMEPLUG_AV_MME</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_HSR"><b>AMIQ_ETH_HSR</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_IETF_TRILL"><b>AMIQ_ETH_IETF_TRILL</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_IPV4"><b>AMIQ_ETH_IPV4</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_IPV6"><b>AMIQ_ETH_IPV6</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_IPX_1"><b>AMIQ_ETH_IPX_1</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_IPX_2"><b>AMIQ_ETH_IPX_2</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_JUMBO_FRAMES"><b>AMIQ_ETH_JUMBO_FRAMES</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_LLDP"><b>AMIQ_ETH_LLDP</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_LLT_FOR_CLUSTER_SERVER"><b>AMIQ_ETH_LLT_FOR_CLUSTER_SERVER</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_MAC_CONTROL"><b>AMIQ_ETH_MAC_CONTROL</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_MAC_SECURITY"><b>AMIQ_ETH_MAC_SECURITY</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_MEDIA_REDUNDANCY"><b>AMIQ_ETH_MEDIA_REDUNDANCY</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_MPLS_MULTICAST"><b>AMIQ_ETH_MPLS_MULTICAST</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_MPLS_UNICAST"><b>AMIQ_ETH_MPLS_UNICAST</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_POWERLINK"><b>AMIQ_ETH_POWERLINK</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_PPPOE_DISCOVERY"><b>AMIQ_ETH_PPPOE_DISCOVERY</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_PPPOE_SESSION"><b>AMIQ_ETH_PPPOE_SESSION</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_PROFINET"><b>AMIQ_ETH_PROFINET</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_PROVIDER_BRIDGING_SHORT_PATH_BRIDGING"><b>AMIQ_ETH_PROVIDER_BRIDGING_SHORT_PATH_BRIDGING</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_PTP"><b>AMIQ_ETH_PTP</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_QNX_QNET"><b>AMIQ_ETH_QNX_QNET</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_Q_IN_Q"><b>AMIQ_ETH_Q_IN_Q</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_RARP"><b>AMIQ_ETH_RARP</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_ROCE"><b>AMIQ_ETH_ROCE</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_SCSI_OVER_ETHERNET"><b>AMIQ_ETH_SCSI_OVER_ETHERNET</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_SERCOS_III"><b>AMIQ_ETH_SERCOS_III</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_SLOW_PROTOCOLS"><b>AMIQ_ETH_SLOW_PROTOCOLS</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_VLAN_TAGGED_FRAME_SHORT_PATH_BRIDGING"><b>AMIQ_ETH_VLAN_TAGGED_FRAME_SHORT_PATH_BRIDGING</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >bit[16-1:0]</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="value_AMIQ_ETH_WAKE_ON_LAN"><b>AMIQ_ETH_WAKE_ON_LAN</b></a><br>
+						</div>
+						<div class="description"></div>
+					</td>
+				</tr>
+		</tbody>
+	</table>
+
+<hr>
+The documentation for this enum was generated from the following file: <a href="../../sv/amiq_eth_types.sv">amiq_eth_types.sv</a>
+
+	<div id="bottomPart">
+		<hr>
+		<p>Generated by <b>cristian.slav</b> on Thu Nov 06 11:19:28 EET 2014 using
+			<a href="http://www.dvteclipse.com/" target="_new">
+				Specador<sup>TM</sup></a> Version 3.5.25
+		</p>
+	</div>
+	</body>
+</html>

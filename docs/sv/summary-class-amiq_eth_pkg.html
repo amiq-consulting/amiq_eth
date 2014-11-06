@@ -1,0 +1,436 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="collection" content="api">
+        <title>amiq_eth
+API Specification</title>
+        <meta name="keywords" content="amiq_eth
+API Specification">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="jq.css" rel="stylesheet" type="text/css"/>
+<script src="jq.js"></script>
+<script src="search.js"></script>
+<script>
+  $(document).ready(function() {
+    $("input#autocomplete").catcomplete({
+    autoFocus: true,
+    source: SEARCH_INDEX,
+    select: function( event, ui ) {
+        parent.elementFrame.location.href = ui.item.link;
+        return false;
+    }
+    
+    });
+  });
+</script>
+<script src="mktree.js" language="javascript"></script>
+<script type="text/javascript">
+function windowTitle() {
+    parent.document.title=document.title;
+}
+function toggleText(id) {
+	var expandedStyle = document.getElementById('expanded'+id).style;
+	var collapsedStyle = document.getElementById('collapsed'+id).style;
+	if (expandedStyle.display == 'block') {
+		expandedStyle.display = 'none';
+		collapsedStyle.display = 'block';
+	} else {
+		expandedStyle.display = 'block';
+		collapsedStyle.display = 'none';
+	}
+}
+</script>        </head>
+<body onload="windowTitle();" bgcolor="white">
+
+<div class="fileSummary" id="fileSummary">
+	
+	
+	
+	
+	
+	
+</div>
+
+
+
+
+
+	<table width="100%">
+		<tbody>
+			<tr class="elementsTableHeading">
+	<th colspan="2">
+        <a name="classes">Classes</a> in <a href="summary-amiq_eth_pkg.html">amiq_eth_pkg</a>
+	</th>
+			</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								virtual <a href="amiq_eth_pkg-amiq_eth_packet.html">amiq_eth_packet</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet</b></a>	
+							</div>
+							<div class="description"><pre>Basic class for declaring the Ethernet packets</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_arp.html">amiq_eth_packet_arp</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_arp</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet Address Resolution Protocol packet</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								virtual <a href="amiq_eth_pkg-amiq_eth_packet_ether_type.html">amiq_eth_packet_ether_type</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_ether_type</b></a>	
+							</div>
+							<div class="description"><pre>Basic class for declaring the Ethernet packets in which Length/Type field is interpreted as Type.</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_ethernet_configuration_testing.html">amiq_eth_packet_ethernet_configuration_testing</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_ethernet_configuration_testing</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet Configuration Testing Protocol packet</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_fcoe.html">amiq_eth_packet_fcoe</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_fcoe</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet Fibre Channel over Ethernet (FCoE) packet</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_hsr_base.html">amiq_eth_packet_hsr_base</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_hsr_base</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet HSR packet</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_hsr_standard.html">amiq_eth_packet_hsr_standard</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_hsr_standard</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet HSR standard packet</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_ipv4.html">amiq_eth_packet_ipv4</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_ipv4</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet IPV4 packet</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_ipv4_header.html">amiq_eth_packet_ipv4_header</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_ipv4_header</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet IPV4 packet header</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_jumbo.html">amiq_eth_packet_jumbo</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_jumbo</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet Jumbo packet</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_length.html">amiq_eth_packet_length</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_length</b></a>	
+							</div>
+							<div class="description"><pre>Basic class for declaring the Ethernet packets in which Length/Type field is interpreted as Length.</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_magic.html">amiq_eth_packet_magic</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_magic</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet Magic packet</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_pause.html">amiq_eth_packet_pause</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_pause</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet Pause packet</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_pfc_pause.html">amiq_eth_packet_pfc_pause</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_pfc_pause</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet PFC Pause packet</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_ptp.html">amiq_eth_packet_ptp</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_ptp</b></a>	
+							</div>
+							<div class="description"><pre>PTP packet</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_ptp_announce_message.html">amiq_eth_packet_ptp_announce_message</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_ptp_announce_message</b></a>	
+							</div>
+							<div class="description"><pre>PTP announce message class</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_ptp_body.html">amiq_eth_packet_ptp_body</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_ptp_body</b></a>	
+							</div>
+							<div class="description"><pre>PTP body class</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_ptp_delay_req_message.html">amiq_eth_packet_ptp_delay_req_message</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_ptp_delay_req_message</b></a>	
+							</div>
+							<div class="description"><pre>PTP delay request message</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_ptp_header.html">amiq_eth_packet_ptp_header</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_ptp_header</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet Precision Time Protocol packet header</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_ptp_sync_message.html">amiq_eth_packet_ptp_sync_message</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_ptp_sync_message</b></a>	
+							</div>
+							<div class="description"><pre>PTP Synch Message</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_packet_snap.html">amiq_eth_packet_snap</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_packet_snap</b></a>	
+							</div>
+							<div class="description"><pre>Ethernet SubNetwork Access Protocol (SNAP) packet</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								virtual <a href="amiq_eth_pkg-amiq_eth_pcap_hdr_base.html">amiq_eth_pcap_hdr_base</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_pcap_hdr_base</b></a>	
+							</div>
+							<div class="description"><pre>Base class for implementing the headers</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_pcap_hdr_s.html">amiq_eth_pcap_hdr_s</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_pcap_hdr_s</b></a>	
+							</div>
+							<div class="description"><pre><font color="#808080">Global header class</font>    <code><a href="http://wiki.wireshark.org/Development/LibpcapFileFormat#Global_Header">http://wiki.wireshark.org/Development/LibpcapFileFormat#Global_Header</a></code>
+</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_pcap_livestream.html">amiq_eth_pcap_livestream</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_pcap_livestream</b></a>	
+							</div>
+							<div class="description"><pre>Class for live-streamming information into a PCAP file.</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_pcap_util.html">amiq_eth_pcap_util</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_pcap_util</b></a>	
+							</div>
+							<div class="description"><pre>Class containing the necessary logic for building the PCAP file.
+All functions are static so it can be easily accessible from anywhere in the code
+</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								<a href="amiq_eth_pkg-amiq_eth_pcaprec_hdr_s.html">amiq_eth_pcaprec_hdr_s</a>
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name=""><b>amiq_eth_pcaprec_hdr_s</b></a>	
+							</div>
+							<div class="description"><pre><font color="#808080">Packet header class</font>    <code><a href="http://wiki.wireshark.org/Development/LibpcapFileFormat#Record_.28Packet.29_Header">http://wiki.wireshark.org/Development/LibpcapFileFormat#Record_.28Packet.29_Header</a></code>
+</pre></div>
+						</td>
+				</tr>
+		</tbody>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="bottomPart">
+		<hr>
+		<p>Generated by <b>cristian.slav</b> on Thu Nov 06 11:19:26 EET 2014 using
+			<a href="http://www.dvteclipse.com/" target="_new">
+				Specador<sup>TM</sup></a> Version 3.5.25
+		</p>
+	</div>
+	</body>
+</html>
+

@@ -1,0 +1,5 @@
+rm -rf work
+vlib work
+vlog  -64   -sv -L ../../lib/uvmc_lib  +define+QUESTA +incdir+common sv2sc.sv
+sccom -64  -DSC_INCLUDE_DYNAMIC_PROCESSES -DQUESTA -I../../src/connect/sc -Icommon sv2sc.cpp
+sccom -64   -link -DSC_INCLUDE_DYNAMIC_PROCESSES -lib ../../lib/uvmc_lib -lib work

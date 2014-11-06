@@ -1,0 +1,203 @@
+\hypertarget{classamiq__eth__packet__ptp}{
+\section{amiq\_\-eth\_\-packet\_\-ptp Class Reference}
+\label{classamiq__eth__packet__ptp}\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+}
+Inheritance diagram for amiq\_\-eth\_\-packet\_\-ptp::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4cm]{classamiq__eth__packet__ptp}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamiq__eth__packet__ptp_a20167ddce08cead24360e27ac9e1e570}{amiq\_\-eth\_\-packet\_\-ptp} ()
+\item 
+virtual \hyperlink{classamiq__eth__packet__ptp_a3970961ac5aec4bb174e10bc463117bb}{$\sim$amiq\_\-eth\_\-packet\_\-ptp} ()
+\item 
+virtual void \hyperlink{classamiq__eth__packet__ptp_ab7bc36daf8f06a4c65e4cbe4c84a04a7}{pack\_\-fcs} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer) const 
+\item 
+virtual void \hyperlink{classamiq__eth__packet__ptp_aa9c14abac259c28ca17c69eecaa5a403}{pack\_\-body} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer) const 
+\item 
+virtual void \hyperlink{classamiq__eth__packet__ptp_a5d415af5fcb6ed2cb603aaf0105fdd43}{do\_\-pack} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer) const 
+\item 
+virtual void \hyperlink{classamiq__eth__packet__ptp_a831addd66dff7e42f2e2e9edb6f976b3}{do\_\-unpack} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer)
+\item 
+virtual void \hyperlink{classamiq__eth__packet__ptp_a68337ad7c7971f267b692dfbd92ede7b}{do\_\-pack\_\-for\_\-fcs} (\hyperlink{classamiq__eth__packer}{amiq\_\-eth\_\-packer} \&packer) const 
+\item 
+virtual void \hyperlink{classamiq__eth__packet__ptp_a52db9ab62ab743317a7ca4745a823a82}{do\_\-print} (ostream \&out) const 
+\item 
+virtual tlm\_\-generic\_\-payload $\ast$ \hyperlink{classamiq__eth__packet__ptp_a7c1a6b1207ce7e9e604e05cd883bccc0}{to\_\-generic\_\-payload} () const 
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classamiq__eth__packet__ptp__header}{amiq\_\-eth\_\-packet\_\-ptp\_\-header} \hyperlink{classamiq__eth__packet__ptp_a09df382a165bd23e508f402ff0833c36}{header}
+\item 
+\hyperlink{classamiq__eth__packet__ptp__announce__message}{amiq\_\-eth\_\-packet\_\-ptp\_\-announce\_\-message} \hyperlink{classamiq__eth__packet__ptp_a6d3636995bf83da8721a245b27495e24}{announce\_\-message\_\-body}
+\item 
+\hyperlink{classamiq__eth__packet__ptp__sync__message}{amiq\_\-eth\_\-packet\_\-ptp\_\-sync\_\-message} \hyperlink{classamiq__eth__packet__ptp_ad28ea57af5d6111b1724fb14e995d30c}{sync\_\-message\_\-body}
+\item 
+\hyperlink{classamiq__eth__packet__ptp__delay__req__message}{amiq\_\-eth\_\-packet\_\-ptp\_\-delay\_\-req\_\-message} \hyperlink{classamiq__eth__packet__ptp_ad1117b52c9080df91e256d2649281547}{delay\_\-req\_\-message\_\-body}
+\item 
+\hyperlink{amiq__eth__types_8cpp_adb511dc715b55539c6abdad1de981a9f}{amiq\_\-eth\_\-fcs} \hyperlink{classamiq__eth__packet__ptp_a05a43b6fa83d4473878a59b44b8be088}{fcs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 469 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classamiq__eth__packet__ptp_a20167ddce08cead24360e27ac9e1e570}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{amiq\_\-eth\_\-packet\_\-ptp}]{\setlength{\rightskip}{0pt plus 5cm}amiq\_\-eth\_\-packet\_\-ptp::amiq\_\-eth\_\-packet\_\-ptp ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classamiq__eth__packet__ptp_a20167ddce08cead24360e27ac9e1e570}
+
+
+Definition at line 485 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+References delay\_\-req\_\-message\_\-body, amiq\_\-eth\_\-packet\_\-ether\_\-type::ether\_\-type, header, SC\_\-AMIQ\_\-ETH\_\-PTP, and sync\_\-message\_\-body.\hypertarget{classamiq__eth__packet__ptp_a3970961ac5aec4bb174e10bc463117bb}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!$\sim$amiq\_\-eth\_\-packet\_\-ptp@{$\sim$amiq\_\-eth\_\-packet\_\-ptp}}
+\index{$\sim$amiq\_\-eth\_\-packet\_\-ptp@{$\sim$amiq\_\-eth\_\-packet\_\-ptp}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{$\sim$amiq\_\-eth\_\-packet\_\-ptp}]{\setlength{\rightskip}{0pt plus 5cm}virtual amiq\_\-eth\_\-packet\_\-ptp::$\sim$amiq\_\-eth\_\-packet\_\-ptp ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__ptp_a3970961ac5aec4bb174e10bc463117bb}
+
+
+Definition at line 493 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+References delay\_\-req\_\-message\_\-body, header, and sync\_\-message\_\-body.
+
+\subsection{Member Function Documentation}
+\hypertarget{classamiq__eth__packet__ptp_a5d415af5fcb6ed2cb603aaf0105fdd43}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!do\_\-pack@{do\_\-pack}}
+\index{do\_\-pack@{do\_\-pack}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{do\_\-pack}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-ptp::do\_\-pack ({\bf amiq\_\-eth\_\-packer} \& {\em packer}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__ptp_a5d415af5fcb6ed2cb603aaf0105fdd43}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet__ether__type_a62fe5f26a466f0bd0045599b89aa6926}{amiq\_\-eth\_\-packet\_\-ether\_\-type}.
+
+Definition at line 529 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+References amiq\_\-eth\_\-packet\_\-ptp\_\-header::do\_\-pack(), header, pack\_\-body(), and pack\_\-fcs().\hypertarget{classamiq__eth__packet__ptp_a68337ad7c7971f267b692dfbd92ede7b}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!do\_\-pack\_\-for\_\-fcs@{do\_\-pack\_\-for\_\-fcs}}
+\index{do\_\-pack\_\-for\_\-fcs@{do\_\-pack\_\-for\_\-fcs}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{do\_\-pack\_\-for\_\-fcs}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-ptp::do\_\-pack\_\-for\_\-fcs ({\bf amiq\_\-eth\_\-packer} \& {\em packer}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__ptp_a68337ad7c7971f267b692dfbd92ede7b}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet__ether__type_aaa85cf778650e1c1b377392a975cb7bc}{amiq\_\-eth\_\-packet\_\-ether\_\-type}.
+
+Definition at line 565 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+References amiq\_\-eth\_\-packet\_\-ptp\_\-header::do\_\-pack(), header, and pack\_\-body().\hypertarget{classamiq__eth__packet__ptp_a52db9ab62ab743317a7ca4745a823a82}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!do\_\-print@{do\_\-print}}
+\index{do\_\-print@{do\_\-print}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{do\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-ptp::do\_\-print (ostream \& {\em out}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__ptp_a52db9ab62ab743317a7ca4745a823a82}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet__ether__type_a9b2852fa1aaf278138fde2232e446f63}{amiq\_\-eth\_\-packet\_\-ether\_\-type}.
+
+Definition at line 573 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+References AMIQ\_\-ETH\_\-FIELD\_\-SEPARATOR, announce\_\-message\_\-body, delay\_\-req\_\-message\_\-body, amiq\_\-eth\_\-packet\_\-ptp\_\-delay\_\-req\_\-message::do\_\-print(), amiq\_\-eth\_\-packet\_\-ptp\_\-sync\_\-message::do\_\-print(), amiq\_\-eth\_\-packet\_\-ptp\_\-announce\_\-message::do\_\-print(), amiq\_\-eth\_\-packet\_\-ptp\_\-header::do\_\-print(), fcs, amiq\_\-eth\_\-packet::get\_\-correct\_\-fcs(), header, amiq\_\-eth\_\-packet\_\-ptp\_\-header::message\_\-type, PTP\_\-AnnounceMessage, PTP\_\-Delay\_\-ReqMessage, PTP\_\-SyncMessage, and sync\_\-message\_\-body.\hypertarget{classamiq__eth__packet__ptp_a831addd66dff7e42f2e2e9edb6f976b3}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!do\_\-unpack@{do\_\-unpack}}
+\index{do\_\-unpack@{do\_\-unpack}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{do\_\-unpack}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-ptp::do\_\-unpack ({\bf amiq\_\-eth\_\-packer} \& {\em packer})\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__ptp_a831addd66dff7e42f2e2e9edb6f976b3}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet__ether__type_a0c86ef80c46bbed384739b23e5efb0ef}{amiq\_\-eth\_\-packet\_\-ether\_\-type}.
+
+Definition at line 538 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+References amiq\_\-eth\_\-do\_\-unpack(), announce\_\-message\_\-body, delay\_\-req\_\-message\_\-body, amiq\_\-eth\_\-packet\_\-ptp\_\-delay\_\-req\_\-message::do\_\-unpack(), amiq\_\-eth\_\-packet\_\-ptp\_\-sync\_\-message::do\_\-unpack(), amiq\_\-eth\_\-packet\_\-ptp\_\-announce\_\-message::do\_\-unpack(), amiq\_\-eth\_\-packet\_\-ptp\_\-header::do\_\-unpack(), fcs, header, amiq\_\-eth\_\-packet\_\-ptp\_\-header::message\_\-type, PTP\_\-AnnounceMessage, PTP\_\-Delay\_\-ReqMessage, PTP\_\-SyncMessage, and sync\_\-message\_\-body.\hypertarget{classamiq__eth__packet__ptp_aa9c14abac259c28ca17c69eecaa5a403}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!pack\_\-body@{pack\_\-body}}
+\index{pack\_\-body@{pack\_\-body}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{pack\_\-body}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-ptp::pack\_\-body ({\bf amiq\_\-eth\_\-packer} \& {\em packer}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__ptp_aa9c14abac259c28ca17c69eecaa5a403}
+
+
+Definition at line 507 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+References announce\_\-message\_\-body, delay\_\-req\_\-message\_\-body, amiq\_\-eth\_\-packet\_\-ptp\_\-delay\_\-req\_\-message::do\_\-pack(), amiq\_\-eth\_\-packet\_\-ptp\_\-sync\_\-message::do\_\-pack(), amiq\_\-eth\_\-packet\_\-ptp\_\-announce\_\-message::do\_\-pack(), header, amiq\_\-eth\_\-packet\_\-ptp\_\-header::message\_\-type, PTP\_\-AnnounceMessage, PTP\_\-Delay\_\-ReqMessage, PTP\_\-SyncMessage, and sync\_\-message\_\-body.
+
+Referenced by do\_\-pack(), and do\_\-pack\_\-for\_\-fcs().\hypertarget{classamiq__eth__packet__ptp_ab7bc36daf8f06a4c65e4cbe4c84a04a7}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!pack\_\-fcs@{pack\_\-fcs}}
+\index{pack\_\-fcs@{pack\_\-fcs}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{pack\_\-fcs}]{\setlength{\rightskip}{0pt plus 5cm}virtual void amiq\_\-eth\_\-packet\_\-ptp::pack\_\-fcs ({\bf amiq\_\-eth\_\-packer} \& {\em packer}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__ptp_ab7bc36daf8f06a4c65e4cbe4c84a04a7}
+
+
+Definition at line 501 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+References amiq\_\-eth\_\-do\_\-pack(), and fcs.
+
+Referenced by do\_\-pack().\hypertarget{classamiq__eth__packet__ptp_a7c1a6b1207ce7e9e604e05cd883bccc0}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!to\_\-generic\_\-payload@{to\_\-generic\_\-payload}}
+\index{to\_\-generic\_\-payload@{to\_\-generic\_\-payload}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{to\_\-generic\_\-payload}]{\setlength{\rightskip}{0pt plus 5cm}virtual tlm\_\-generic\_\-payload$\ast$ amiq\_\-eth\_\-packet\_\-ptp::to\_\-generic\_\-payload () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}
+\label{classamiq__eth__packet__ptp_a7c1a6b1207ce7e9e604e05cd883bccc0}
+
+
+Reimplemented from \hyperlink{classamiq__eth__packet_a6dd92751d8172eeaa347d71bb415b0d5}{amiq\_\-eth\_\-packet}.
+
+Definition at line 610 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+References AMIQ\_\-ETH\_\-PACKET\_\-PTP\_\-CODE.
+
+\subsection{Member Data Documentation}
+\hypertarget{classamiq__eth__packet__ptp_a6d3636995bf83da8721a245b27495e24}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!announce\_\-message\_\-body@{announce\_\-message\_\-body}}
+\index{announce\_\-message\_\-body@{announce\_\-message\_\-body}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{announce\_\-message\_\-body}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-packet\_\-ptp\_\-announce\_\-message} {\bf amiq\_\-eth\_\-packet\_\-ptp::announce\_\-message\_\-body}}}
+\label{classamiq__eth__packet__ptp_a6d3636995bf83da8721a245b27495e24}
+
+
+Definition at line 477 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+Referenced by do\_\-print(), do\_\-unpack(), and pack\_\-body().\hypertarget{classamiq__eth__packet__ptp_ad1117b52c9080df91e256d2649281547}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!delay\_\-req\_\-message\_\-body@{delay\_\-req\_\-message\_\-body}}
+\index{delay\_\-req\_\-message\_\-body@{delay\_\-req\_\-message\_\-body}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{delay\_\-req\_\-message\_\-body}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-packet\_\-ptp\_\-delay\_\-req\_\-message} {\bf amiq\_\-eth\_\-packet\_\-ptp::delay\_\-req\_\-message\_\-body}}}
+\label{classamiq__eth__packet__ptp_ad1117b52c9080df91e256d2649281547}
+
+
+Definition at line 479 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+Referenced by amiq\_\-eth\_\-packet\_\-ptp(), do\_\-print(), do\_\-unpack(), pack\_\-body(), and $\sim$amiq\_\-eth\_\-packet\_\-ptp().\hypertarget{classamiq__eth__packet__ptp_a05a43b6fa83d4473878a59b44b8be088}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!fcs@{fcs}}
+\index{fcs@{fcs}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{fcs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-fcs} {\bf amiq\_\-eth\_\-packet\_\-ptp::fcs}}}
+\label{classamiq__eth__packet__ptp_a05a43b6fa83d4473878a59b44b8be088}
+
+
+Definition at line 482 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+Referenced by do\_\-print(), do\_\-unpack(), and pack\_\-fcs().\hypertarget{classamiq__eth__packet__ptp_a09df382a165bd23e508f402ff0833c36}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!header@{header}}
+\index{header@{header}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-packet\_\-ptp\_\-header} {\bf amiq\_\-eth\_\-packet\_\-ptp::header}}}
+\label{classamiq__eth__packet__ptp_a09df382a165bd23e508f402ff0833c36}
+
+
+Definition at line 474 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+Referenced by amiq\_\-eth\_\-packet\_\-ptp(), do\_\-pack(), do\_\-pack\_\-for\_\-fcs(), do\_\-print(), do\_\-unpack(), pack\_\-body(), and $\sim$amiq\_\-eth\_\-packet\_\-ptp().\hypertarget{classamiq__eth__packet__ptp_ad28ea57af5d6111b1724fb14e995d30c}{
+\index{amiq\_\-eth\_\-packet\_\-ptp@{amiq\_\-eth\_\-packet\_\-ptp}!sync\_\-message\_\-body@{sync\_\-message\_\-body}}
+\index{sync\_\-message\_\-body@{sync\_\-message\_\-body}!amiq_eth_packet_ptp@{amiq\_\-eth\_\-packet\_\-ptp}}
+\subsubsection[{sync\_\-message\_\-body}]{\setlength{\rightskip}{0pt plus 5cm}{\bf amiq\_\-eth\_\-packet\_\-ptp\_\-sync\_\-message} {\bf amiq\_\-eth\_\-packet\_\-ptp::sync\_\-message\_\-body}}}
+\label{classamiq__eth__packet__ptp_ad28ea57af5d6111b1724fb14e995d30c}
+
+
+Definition at line 478 of file amiq\_\-eth\_\-packet\_\-ptp.cpp.
+
+Referenced by amiq\_\-eth\_\-packet\_\-ptp(), do\_\-print(), do\_\-unpack(), pack\_\-body(), and $\sim$amiq\_\-eth\_\-packet\_\-ptp().
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+/home/cristian.slav/work/amiq/projects/sv/amiq\_\-eth/sc/\hyperlink{amiq__eth__packet__ptp_8cpp}{amiq\_\-eth\_\-packet\_\-ptp.cpp}\end{DoxyCompactItemize}

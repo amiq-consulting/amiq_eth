@@ -1,0 +1,598 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="collection" content="api">
+        <title>amiq_eth
+API Specification</title>
+        <meta name="keywords" content="amiq_eth
+API Specification">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="jq.css" rel="stylesheet" type="text/css"/>
+<script src="jq.js"></script>
+<script src="search.js"></script>
+<script>
+  $(document).ready(function() {
+    $("input#autocomplete").catcomplete({
+    autoFocus: true,
+    source: SEARCH_INDEX,
+    select: function( event, ui ) {
+        parent.elementFrame.location.href = ui.item.link;
+        return false;
+    }
+    
+    });
+  });
+</script>
+<script src="mktree.js" language="javascript"></script>
+<script type="text/javascript">
+function windowTitle() {
+    parent.document.title=document.title;
+}
+function toggleText(id) {
+	var expandedStyle = document.getElementById('expanded'+id).style;
+	var collapsedStyle = document.getElementById('collapsed'+id).style;
+	if (expandedStyle.display == 'block') {
+		expandedStyle.display = 'none';
+		collapsedStyle.display = 'block';
+	} else {
+		expandedStyle.display = 'block';
+		collapsedStyle.display = 'none';
+	}
+}
+</script>        </head>
+<body onload="windowTitle();" bgcolor="white">
+
+<div class="fileSummary" id="fileSummary">
+	
+	
+	
+	
+	
+	
+</div>
+
+
+	<table width="100%">
+		<tbody>
+			<tr class="elementsTableHeading">
+	<th colspan="2">
+        <a name="typedefs">Typedefs</a> in <a href="summary-amiq_eth_pkg.html">amiq_eth_pkg</a>
+	</th>
+			</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_address"><b>amiq_eth_address</b></a>
+	
+		-> bit[48-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_arp_hlen"><b>amiq_eth_arp_hlen</b></a>
+	
+		-> bit[8-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_arp_htype"><b>amiq_eth_arp_htype</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_arp_oper"><b>amiq_eth_arp_oper</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_arp_plen"><b>amiq_eth_arp_plen</b></a>
+	
+		-> bit[8-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_arp_ptype"><b>amiq_eth_arp_ptype</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_arp_sha"><b>amiq_eth_arp_sha</b></a>
+	
+		-> bit[48-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_arp_spa"><b>amiq_eth_arp_spa</b></a>
+	
+		-> bit[32-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_arp_tha"><b>amiq_eth_arp_tha</b></a>
+	
+		-> bit[48-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_arp_tpa"><b>amiq_eth_arp_tpa</b></a>
+	
+		-> bit[32-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_data"><b>amiq_eth_data</b></a>
+	
+		-> bit[8-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ethernet_configuration_testing_skipcount"><b>amiq_eth_ethernet_configuration_testing_skipcount</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_extension"><b>amiq_eth_extension</b></a>
+	
+		-> bit[1-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_fcoe_version"><b>amiq_eth_fcoe_version</b></a>
+	
+		-> bit[4-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_fcs"><b>amiq_eth_fcs</b></a>
+	
+		-> bit[32-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_hsr_path"><b>amiq_eth_hsr_path</b></a>
+	
+		-> bit[4-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_hsr_seq"><b>amiq_eth_hsr_seq</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_hsr_size"><b>amiq_eth_hsr_size</b></a>
+	
+		-> bit[12-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_checksum"><b>amiq_eth_ipv4_header_checksum</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_destination_ip_address"><b>amiq_eth_ipv4_header_destination_ip_address</b></a>
+	
+		-> bit[32-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_dscp"><b>amiq_eth_ipv4_header_dscp</b></a>
+	
+		-> bit[6-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_ecn"><b>amiq_eth_ipv4_header_ecn</b></a>
+	
+		-> bit[2-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_flags"><b>amiq_eth_ipv4_header_flags</b></a>
+	
+		-> bit[3-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_fragment_offset"><b>amiq_eth_ipv4_header_fragment_offset</b></a>
+	
+		-> bit[13-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_identification"><b>amiq_eth_ipv4_header_identification</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_ihl"><b>amiq_eth_ipv4_header_ihl</b></a>
+	
+		-> bit[4-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_option"><b>amiq_eth_ipv4_header_option</b></a>
+	
+		-> bit[32-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_protocol"><b>amiq_eth_ipv4_header_protocol</b></a>
+	
+		-> bit[8-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_source_ip_address"><b>amiq_eth_ipv4_header_source_ip_address</b></a>
+	
+		-> bit[32-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_total_length"><b>amiq_eth_ipv4_header_total_length</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_ttl"><b>amiq_eth_ipv4_header_ttl</b></a>
+	
+		-> bit[8-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ipv4_header_version"><b>amiq_eth_ipv4_header_version</b></a>
+	
+		-> bit[4-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_jumbo_client_data_size"><b>amiq_eth_jumbo_client_data_size</b></a>
+	
+		-> bit[32-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_length"><b>amiq_eth_length</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_pause_opcode"><b>amiq_eth_pause_opcode</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_pause_parameter"><b>amiq_eth_pause_parameter</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_pfc_class_enable_vector"><b>amiq_eth_pfc_class_enable_vector</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_pfc_opcode"><b>amiq_eth_pfc_opcode</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_pfc_parameter"><b>amiq_eth_pfc_parameter</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_preamble"><b>amiq_eth_preamble</b></a>
+	
+		-> bit[56-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_announce_message_current_utc_offset"><b>amiq_eth_ptp_announce_message_current_utc_offset</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_announce_message_grandmaster_clock_quality"><b>amiq_eth_ptp_announce_message_grandmaster_clock_quality</b></a>
+	
+		-> bit[32-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_announce_message_grandmaster_identity"><b>amiq_eth_ptp_announce_message_grandmaster_identity</b></a>
+	
+		-> bit[64-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_announce_message_grandmaster_priority_1"><b>amiq_eth_ptp_announce_message_grandmaster_priority_1</b></a>
+	
+		-> bit[8-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_announce_message_grandmaster_priority_2"><b>amiq_eth_ptp_announce_message_grandmaster_priority_2</b></a>
+	
+		-> bit[8-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_announce_message_steps_removed"><b>amiq_eth_ptp_announce_message_steps_removed</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_announce_message_time_source"><b>amiq_eth_ptp_announce_message_time_source</b></a>
+	
+		-> bit[8-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_correction_field"><b>amiq_eth_ptp_correction_field</b></a>
+	
+		-> bit[64-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_domain_number"><b>amiq_eth_ptp_domain_number</b></a>
+	
+		-> bit[8-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_flags"><b>amiq_eth_ptp_flags</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_log_message"><b>amiq_eth_ptp_log_message</b></a>
+	
+		-> bit[8-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_message_length"><b>amiq_eth_ptp_message_length</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_sequence_id"><b>amiq_eth_ptp_sequence_id</b></a>
+	
+		-> bit[16-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_ptp_version"><b>amiq_eth_ptp_version</b></a>
+	
+		-> bit[4-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_sfd"><b>amiq_eth_sfd</b></a>
+	
+		-> bit[8-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td>
+	 		<a href="summary-typedef-amiq_eth_pkg.html#typedef_amiq_eth_snap_protocol_identifier"><b>amiq_eth_snap_protocol_identifier</b></a>
+	
+		-> bit[40-1:0]
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+		</tbody>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="bottomPart">
+		<hr>
+		<p>Generated by <b>cristian.slav</b> on Thu Nov 06 11:19:26 EET 2014 using
+			<a href="http://www.dvteclipse.com/" target="_new">
+				Specador<sup>TM</sup></a> Version 3.5.25
+		</p>
+	</div>
+	</body>
+</html>
+

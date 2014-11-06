@@ -1,0 +1,470 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="collection" content="api">
+        <title>amiq_eth
+API Specification</title>
+        <meta name="keywords" content="amiq_eth
+API Specification">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="jq.css" rel="stylesheet" type="text/css"/>
+<script src="jq.js"></script>
+<script src="search.js"></script>
+<script>
+  $(document).ready(function() {
+    $("input#autocomplete").catcomplete({
+    autoFocus: true,
+    source: SEARCH_INDEX,
+    select: function( event, ui ) {
+        parent.elementFrame.location.href = ui.item.link;
+        return false;
+    }
+    
+    });
+  });
+</script>
+<script src="mktree.js" language="javascript"></script>
+<script type="text/javascript">
+function windowTitle() {
+    parent.document.title=document.title;
+}
+function toggleText(id) {
+	var expandedStyle = document.getElementById('expanded'+id).style;
+	var collapsedStyle = document.getElementById('collapsed'+id).style;
+	if (expandedStyle.display == 'block') {
+		expandedStyle.display = 'none';
+		collapsedStyle.display = 'block';
+	} else {
+		expandedStyle.display = 'block';
+		collapsedStyle.display = 'none';
+	}
+}
+</script>        </head>
+<body onload="windowTitle();" bgcolor="white">
+
+<a name="top"></a>
+
+<h2 class="page-element-name">class <a  href="summary-amiq_eth_pkg.html">amiq_eth_pkg</a> :: amiq_eth_packet_ptp_sync_message</h2>
+
+<hr>
+
+<div class="fileSummary" id="fileSummary">
+		<a href="#constructor">Constructor</a>
+		<a href="#typedefs">Typedefs</a>
+		<a href="#variables">Variables</a>
+		<a href="#functions">Functions</a>
+		<a href="#diagrams">Diagrams</a>
+</div>
+
+
+	<hr>
+	<div class="classHierarchy">
+ 		<a href="amiq_eth_pkg-amiq_eth_packet_ptp_body.html">amiq_eth_packet_ptp_body</a>
+		    <br>
+				&nbsp;&nbsp;<img src="inherit.gif">
+						amiq_eth_packet_ptp_sync_message
+		    <br>
+	</div>
+
+	<hr>
+	<p>
+		<pre>PTP Synch Message</pre>
+	</p>
+<hr>
+<!-- ========= START Parameters ======= -->
+<!-- ========= END Parameters ======= -->
+<!-- ========= START Constructor ======= -->
+	<a name="inheritedconstructor"></a>
+	<table width="100%">
+		<tbody>
+			<tr class="elementsTableHeading">
+	<th colspan="2">
+        	<a class="floatRight" href="#top">Top</a>
+        <a name="constructor">Constructor</a>
+	</th>
+			</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a ></a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function_new"><b>new</b>(		input 	<a >string</a>
+name = ""
+)</a>
+						</div>
+						<div class="description">Constructor<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>name</b> - the name assigned to the instance of this class<br></div>
+					</td>
+				</tr>
+		</tbody>
+	</table>
+<!-- ========= END Constructor ======= -->
+<!-- ========= START Typedefs ======= -->
+	<a name="inheritedtypedefs"></a>
+	<table width="100%">
+		<tbody>
+			<tr class="elementsTableHeading">
+	<th colspan="2">
+        	<a class="floatRight" href="#top">Top</a>
+        <a name="typedefs">Typedefs</a>
+	</th>
+			</tr>
+				<tr class="elementsTableRow">
+						<td>
+		 <b>type_id</b>
+	
+		-> uvm_object_registry#(amiq_eth_packet_ptp_sync_message, "amiq_eth_packet_ptp_sync_message")
+	
+							<div class="description"></div>
+						</td>
+				</tr>
+		</tbody>
+	</table>
+<!-- ========= END Typedefs ======= -->
+<!-- ========= START Struct Typedefs ======= -->
+<!-- ========= END Struct Typedefs ======= -->
+<!-- ========= START Enum Typedefs ======= -->
+<!-- ========= END Enum Typedefs ======= -->
+<!-- ========= START Variables ======= -->
+	<a name="inheritedvariables"></a>
+	<table width="100%">
+		<tbody>
+			<tr class="elementsTableHeading">
+	<th colspan="2">
+        	<a class="floatRight" href="#top">Top</a>
+        <a name="variables">Variables</a>
+	</th>
+			</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								rand 	<a >byte</a> []
+
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name="variable_origin_timestamp"><b>origin_timestamp</b></a><br>
+							</div>
+							<div class="description"></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+									<a >bit</a>
+
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name="variable_print_lists"><b>print_lists</b></a><br>
+							</div>
+							<div class="description"><pre>Switch to print lists</pre></div>
+						</td>
+				</tr>
+				<tr class="elementsTableRow">
+						<td width="5%">
+							<div class="functionSignature">
+								const static 	<a >string</a>
+
+							</div>
+						</td>
+						<td>
+							<div class="functionSignature">
+								<a name="variable_type_name"><b>type_name</b></a><br>
+							</div>
+							<div class="description"></div>
+						</td>
+				</tr>
+		</tbody>
+	</table>
+<!-- ========= END Variables ======= -->
+<!-- ========= START Inherited Variables ======= -->
+<!-- ========= END Inherited Variables ======= -->
+<!-- ========= START Constraints ======= -->
+<!-- ========= END Constraints ======= -->
+<!-- ========= START Functions ======= -->
+	<a name="inheritedfunctions"></a>
+	<table width="100%">
+		<tbody>
+			<tr class="elementsTableHeading">
+	<th colspan="2">
+        	<a class="floatRight" href="#top">Top</a>
+        <a name="functions">Functions</a>
+	</th>
+			</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >void</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function___m_uvm_field_automation"><b>__m_uvm_field_automation</b>(		input 	<a >uvm_object</a>
+tmp_data__, 
+		input 	<a >int</a>
+what__, 
+		input 	<a >string</a>
+str__
+)</a>
+						</div>
+						<div class="description"><pre></pre></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+							virtual 	<a >bit</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function_compare"><b>compare</b>(		input 	<a >uvm_object</a>
+rhs, 
+		input 	<a >uvm_comparer</a>
+comparer = null
+)</a>
+						</div>
+						<div class="description">Compares the current class instance with the one provided as an argument<br><br><b>Returns:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;1 - objects are the same, 0 - objects are different<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>rhs</b> - Right Hand Side object<br>&nbsp;&nbsp;&nbsp;&nbsp;<b>comparer</b> - The UVM comparer object used in evaluating this comparison - default is "null"<br></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+							virtual 	<a >string</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function_convert2string"><b>convert2string</b>()</a>
+						</div>
+						<div class="description">Converts the information containing in the instance of this class to an easy-to-read string<br><br><b>Returns:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;easy-to-read string with the information contained in the instance of this class<br></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >void</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function_copy"><b>copy</b>(		input 	<a >uvm_object</a>
+rhs
+)</a>
+						</div>
+						<div class="description">Copy the right hand side class instance to this current instance<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>rhs</b> - Right Hand Side object<br></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+								<a >uvm_object</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function_create"><b>create</b>(		input 	<a >string</a>
+name = ""
+)</a>
+						</div>
+						<div class="description"><pre></pre></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+							virtual 	<a >void</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function_do_pack"><b>do_pack</b>(		input 	<a >uvm_packer</a>
+packer
+)</a>
+						</div>
+						<div class="description">Pack the entire PTP Synch Message<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>packer</b> - the packer used by this function<br></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+							virtual 	<a >void</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function_do_unpack"><b>do_unpack</b>(		input 	<a >uvm_packer</a>
+packer
+)</a>
+						</div>
+						<div class="description">Unpack the entire PTP Synch Message<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>packer</b> - the packer used by this function<br></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+							virtual 	<a >uvm_object_wrapper</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function_get_object_type"><b>get_object_type</b>()</a>
+						</div>
+						<div class="description"><pre></pre></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+							static 	<a href="amiq_eth_pkg-amiq_eth_packet_ptp_sync_message.html#typedef_type_id">type_id</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function_get_type"><b>get_type</b>()</a>
+						</div>
+						<div class="description"><pre></pre></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+							virtual 	<a >string</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function_get_type_name"><b>get_type_name</b>()</a>
+						</div>
+						<div class="description"><pre></pre></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+							virtual 	<a >void</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function_pack_ptp_sync_message_with_options"><b>pack_ptp_sync_message_with_options</b>(		input 	<a >uvm_packer</a>
+packer, 
+		input 	<a >bit</a>
+local_pack_origin_timestamp
+)</a>
+						</div>
+						<div class="description">Pack Ethernet PTP sync message<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>packer</b> - the packer used by this function<br>&nbsp;&nbsp;&nbsp;&nbsp;<b>local_pack_origin_timestamp</b> - boolean to control if to pack or not the "origin_timestamp" field<br></div>
+					</td>
+				</tr>
+				<tr class="elementsTableRow">
+					<td width="5%">
+						<div class="functionSignature">
+							virtual 	<a >void</a>
+
+						</div>
+					</td>
+					<td>
+						<div class="functionSignature">
+							<a name="function_unpack_ptp_sync_message_with_options"><b>unpack_ptp_sync_message_with_options</b>(		input 	<a >uvm_packer</a>
+packer, 
+		input 	<a >bit</a>
+local_pack_origin_timestamp
+)</a>
+						</div>
+						<div class="description">Unpack Ethernet PTP sync message<br><br><b>Arguments:</b><br>&nbsp;&nbsp;&nbsp;&nbsp;<b>packer</b> - the packer used by this function<br>&nbsp;&nbsp;&nbsp;&nbsp;<b>local_pack_origin_timestamp</b> - boolean to control if to unpack or not the "origin_timestamp" field<br></div>
+					</td>
+				</tr>
+		</tbody>
+	</table>
+<!-- ========= END Functions ======= -->
+<!-- ========= START Inherited Functions ======= -->
+<a name="inheritedFunctions"></a>
+		<table width="100%">
+		    <tbody>
+		        <tr class="TableSubHeadingColor" bgcolor="#eeeeff">
+		        	<th colspan="2">
+		        		<a class="floatRight" href="#top">Top</a>
+		              	<b>Functions inherited from 	<a  href="summary-amiq_eth_pkg.html">amiq_eth_pkg</a> ::  		<a href="amiq_eth_pkg-amiq_eth_packet_ptp_body.html">amiq_eth_packet_ptp_body</a>
+
+</b>
+					</th>
+		        </tr>
+		        <tr class="elementsTableRow">
+		            <td>
+		            	<div style="cursor: pointer" onclick="toggleText('IF0')" id="collapsedIF0"><img src="more.jpg"></div>
+						<div style="display:none;cursor: pointer" onclick="toggleText('IF0')" id="expandedIF0">
+						<div><img src="less.jpg"><br></div>
+						   <code>
+									<a href="amiq_eth_pkg-amiq_eth_packet_ptp_body.html#function_body_size_in_bytes">body_size_in_bytes</a>
+
+			                </code>
+						</div>
+		            </td>
+		        </tr>
+		    </tbody>
+		</table>
+<!-- ========= END Inherited Functions ======= -->
+<!-- ========= START Tasks ======= -->
+<!-- ========= END Tasks ======= -->
+<!-- ========= START Inherited Tasks ======= -->
+<!-- ========= END Inherited Tasks ======= -->
+<!-- ========= START Diagrams ======= -->
+	<table summary="" width="100%" border="1" cellpadding="3" cellspacing="0">
+		    <tbody>
+		        <tr class="TableHeadingColor">
+	<th colspan="2">
+        	<a class="floatRight" href="#top">Top</a>
+        <a name="diagrams">Diagrams</a>
+	</th>
+		        </tr>
+				        <tr class="elementsTableRow">
+				            <td>
+				               	<div style="cursor: pointer" onclick="toggleText('UC1')" id="collapsedUC1"><img src="more.jpg"><i>&nbsp;Inheritance Diagram</i></div>
+								<div style="display:none;cursor: pointer" onclick="toggleText('UC1')" id="expandedUC1">
+							    <div><img src="less.jpg"><i>&nbsp;Inheritance Diagram</i><br></div>
+							    <div style="text-align:center"><img src="amiq_eth_pkg-amiq_eth_packet_ptp_sync_message_inheritance.png" border="0" usemap="#_inheritance">
+									<map name="_inheritance">
+										<area shape="rect" id="node1" href="amiq_eth_pkg-amiq_eth_packet_ptp_sync_message.html"  alt="" coords="718,5,1047,35"><area shape="rect" id="node2" href="amiq_eth_pkg-amiq_eth_packet_ptp_body.html"  alt="" coords="385,5,637,35"><area shape="poly" id="edge1"  alt="" coords="718,23,651,23,651,17,718,17"><area shape="rect" id="node3"  alt="" coords="185,5,303,35"><area shape="poly" id="edge2"  alt="" coords="384,23,317,23,317,17,384,17"><area shape="rect" id="node4"  alt="" coords="5,5,104,35"><area shape="poly" id="edge3"  alt="" coords="185,23,118,23,118,17,185,17">
+									 </map>
+								</div>
+								</div>
+								<br>
+				            </td>
+				        </tr>
+		    </tbody>
+		</table>
+
+<!-- ========= END Diagrams ======= -->
+
+<hr>
+The documentation for this class was generated from the following file: <a href="../../sv/amiq_eth_packet_ptp.sv">amiq_eth_packet_ptp.sv</a>
+
+	<div id="bottomPart">
+		<hr>
+		<p>Generated by <b>cristian.slav</b> on Thu Nov 06 11:19:27 EET 2014 using
+			<a href="http://www.dvteclipse.com/" target="_new">
+				Specador<sup>TM</sup></a> Version 3.5.25
+		</p>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+-${ARCH_BITS} 
+-DSC_INCLUDE_DYNAMIC_PROCESSES
+-DQUESTA
+-I${UVMC_HOME}/src/connect/sc
+-I${PROJECT_DIR}/sc/
+-DUVMC_MAX_WORDS=${UVMC_MAX_WORDS}
+${UVMC_HOME}/src/connect/sc/uvmc.cpp
+${PROJECT_DIR}/ve/sc/${TOP_MODULE_NAME}.cpp

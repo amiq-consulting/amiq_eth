@@ -1,0 +1,12 @@
+-${ARCH_BITS}
+-sv
++incdir+${UVM_HOME}/src/
++incdir+${PROJECT_DIR}/sv/
++incdir+${PROJECT_DIR}/ve/sv/
++incdir+${PROJECT_DIR}/tests/
++incdir+${UVMC_HOME}/src/connect/sv/
++define+UVMC_MAX_WORDS=${UVMC_MAX_WORDS}
++define+UVM_MAX_STREAMBITS=${UVM_MAX_STREAMBITS}
++${UVM_HOME}/src/uvm.svh
+${UVMC_HOME}/src/connect/sv/uvmc_pkg.sv
+${TOP_FILE_PATH}
